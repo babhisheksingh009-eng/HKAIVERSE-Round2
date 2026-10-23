@@ -145,19 +145,19 @@ Test the prototype using five scenarios: normal submission, missing information,
 
 **Status:** PASS — authorization-function tests passed.
 
-**Evidence reference:** Terminal output from `python test_authorization_runtime.py`.
+**Evidence reference:** `authorization_test.log`, containing the three authorization test results.
 
 **Limitation:** The test uses simulated session states. The complete login flow, browser-level behavior, and actual database review operation have not been tested end to end.
 
 #### Test 5: Database Connection Failure
 
-**Activity:** Temporarily configure the application to use an unavailable MySQL port and observe its error handling.
+**Activity:** Run the standalone test `python test_database_failure.py`, which uses a mock object to simulate a MySQL connection error.
 
-**Result:** The application displayed a readable connection error and explained that the database connection failed.
+**Result:** The standalone test detected the simulated connection error and reported that the simulated failure was handled.
 
 **Status:** PASS — connection-failure handling tested.
 
-**Evidence reference:** Retain the application or terminal output showing the connection error.
+**Evidence reference:** `database_failure_test.log`, containing the output of the simulated database-failure test.
 
 **Limitation:** This test verifies handling of a connection failure, not every possible database error or transaction failure.
 
@@ -176,8 +176,8 @@ Test the prototype using five scenarios: normal submission, missing information,
 2. The prototype has five documented testing scenarios.
 3. The normal submission, missing-information, and duplicate-submission results are based on user confirmation.
 4. The authorization-function test was executed successfully using simulated session states.
-5. The database connection-failure behavior was tested using an unavailable MySQL port.
-6. Evidence screenshots and logs should be retained alongside the relevant test results.
+5. The database-failure test used a mock object to simulate a MySQL connection error. Separately, a direct MySQL connection test succeeded; its result is saved in `database_connection_test.log`.
+6. The authorization, simulated database-failure, and direct database-connection results have been saved in `authorization_test.log`, `database_failure_test.log`, and `database_connection_test.log`. Screenshots or database evidence for the first three user-confirmed scenarios have not yet been saved.
 7. Actual time savings have not been measured.
 
 **Next actions:**
@@ -239,7 +239,7 @@ Conduct timed tests using synthetic project data. Compare the existing workflow 
 
 SkillBridge AI is a prototype intended to improve the organization and visibility of academic project submissions and reviews. Its documented test scenarios provide initial evidence of functionality, including authorization-function behavior and database connection-failure handling.
 
-The normal submission, missing-information, and duplicate-submission results are based on user confirmation. The authorization-function and database connection-failure tests were executed, subject to the limitations documented above.
+The normal submission, missing-information, and duplicate-submission results are based on user confirmation. The authorization-function test and simulated database-failure test were executed and their terminal results were saved. A separate direct MySQL connection test also succeeded. These results do not establish that the complete application has been tested end to end.
 
 The current evidence does not establish that the identified workflow problem is widespread, that the system is production-ready, or that it produces a specific amount of time savings. The preliminary estimate of six minutes per submission is illustrative and requires validation through timed testing.
 

@@ -1,0 +1,3 @@
+PASS: Student is rejected from faculty-only actions.
+PASS: Faculty is allowed to continue.
+PASS: Unauthenticated user is rejected.

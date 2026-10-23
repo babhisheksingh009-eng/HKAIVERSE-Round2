@@ -93,6 +93,18 @@ If an error occurs, the application displays an understandable message and provi
 
 Examples include missing information, duplicate submissions, unauthorized actions, and database connection failures.
 
+#### Proposed Status Transitions
+
+| Current status | Action | Next status | Responsible role |
+|---|---|---|---|
+| Not submitted | Student submits complete information | SUBMITTED | Student |
+| SUBMITTED | Faculty begins reviewing | UNDER_REVIEW | Faculty reviewer |
+| UNDER_REVIEW | More information is needed | CHANGES_REQUIRED | Faculty reviewer |
+| CHANGES_REQUIRED | Student submits the requested changes | SUBMITTED | Student |
+| UNDER_REVIEW | Faculty accepts the project | APPROVED | Faculty reviewer |
+
+These transitions describe the proposed workflow. They must not be presented as implemented functionality unless they have been verified in the prototype.
+
 ### 4. Roles and Responsibilities
 
 #### Student
@@ -116,6 +128,8 @@ Examples include missing information, duplicate submissions, unauthorized action
 - Support system maintenance and recovery.
 
 **Implementation note:** The administrator responsibilities are proposed design elements and must not be presented as implemented capabilities unless an administrator role has actually been developed and tested.
+
+**Approval boundary:** Students may submit projects and respond to requested changes, but only authorized faculty reviewers may record official review decisions. Any exceptional administrative override must follow an approved policy and be logged.
 
 ### 5. Workflow Exceptions and Recovery
 

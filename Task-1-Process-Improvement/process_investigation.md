@@ -80,6 +80,24 @@ These points are investigation questions, not confirmed institutional shortcomin
 
 These are potential risks. Their frequency, severity, and actual impact have not yet been measured.
 
+### 6A. Illustrative Scale Estimate
+
+The actual number of academic project submissions handled by the relevant department has not been collected. Therefore, the following scenarios illustrate how the potential impact could vary with submission volume. They are not estimates of actual IFHE activity.
+
+The preliminary time-saving calculation in the evidence log assumes a possible net saving of six minutes per submission. That figure has not been measured and must be validated.
+
+| Hypothetical submissions per month | Potential saving per submission | Illustrative total time saved per month |
+|---:|---:|---:|
+| 10 | 6 minutes | 60 minutes (1 hour) |
+| 40 | 6 minutes | 240 minutes (4 hours) |
+| 100 | 6 minutes | 600 minutes (10 hours) |
+
+**Calculation:** Hypothetical monthly time saved = submissions per month × assumed minutes saved per submission.
+
+For example, 40 × 6 = 240 minutes, or four hours per month.
+
+**Limitations:** Submission volumes are hypothetical, and the six-minute saving is an unmeasured planning assumption. These calculations do not demonstrate actual demand, actual time savings, or college-wide impact. To estimate the real scale, obtain permission to collect an appropriate submission count and conduct timed comparisons of the existing and proposed workflows.
+
 ### 7. Proposed Improved Workflow
 
 SkillBridge AI proposes a structured workflow for project submission and review.
