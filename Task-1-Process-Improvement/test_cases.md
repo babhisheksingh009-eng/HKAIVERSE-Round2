@@ -22,7 +22,7 @@ Test the proposed project submission and review workflow using five scenarios. T
 
 **Status:** PASS — based on user testing and confirmation.
 
-**Evidence available:** User confirmation that normal submission works. No screenshot was retained for this test.
+**Evidence available:** User confirmation that normal submission works. Screenshot retained at `evidence/test1_normal_submission.png`; no database-query evidence was retained.
 
 **Recovery:** If saving fails, display an error and allow the student to retry safely.
 
@@ -43,7 +43,7 @@ Test the proposed project submission and review workflow using five scenarios. T
 
 **Status:** PASS — based on user testing and confirmation.
 
-**Evidence available:** User confirmation that required-field validation works. No screenshot was retained for this test.
+**Evidence available:** User confirmation that required-field validation works. Screenshot retained at `evidence/test2_missing_information.png`; no database-query evidence was retained.
 
 **Recovery:** The student completes the missing information and resubmits.
 
@@ -64,7 +64,7 @@ Test the proposed project submission and review workflow using five scenarios. T
 
 **Status:** PASS — based on user testing and confirmation.
 
-**Evidence available:** User confirmation that duplicate detection works. No screenshot or database query result was retained for this test.
+**Evidence available:** User confirmation that duplicate detection works. Screenshot retained at `evidence/test3_duplicate_submission.png`; no database-query evidence was retained.
 
 **Recovery:** The student can open the existing submission or explicitly confirm a legitimate new submission, if supported by the application.
 
@@ -126,9 +126,9 @@ All three test cases passed:
 
 | Test | Scenario | Result | Evidence |
 |---|---|---|---|
-| 1 | Normal submission | PASS — user-confirmed | User confirmation; screenshot not retained |
-| 2 | Missing information | PASS — user-confirmed | User confirmation; screenshot not retained |
-| 3 | Duplicate submission | PASS — user-confirmed | User confirmation; screenshot/database evidence not retained |
+| 1 | Normal submission | PASS — user-confirmed | Screenshot: `evidence/test1_normal_submission.png`; no database-query evidence |
+| 2 | Missing information | PASS — user-confirmed | Screenshot: `evidence/test2_missing_information.png`; no database-query evidence |
+| 3 | Duplicate submission | PASS — user-confirmed | Screenshot: `evidence/test3_duplicate_submission.png`; no database-query evidence |
 | 4 | Unauthorized request | PASS — authorization-function test | Runtime test output |
 | 5 | Database connection failure | PASS — connection-failure handling | Application or terminal error output |
 
@@ -142,7 +142,7 @@ All three test cases passed:
 
 The five required scenarios have been reported as working or have supporting test results. The normal submission, missing-information, and duplicate-submission results are based on user confirmation. The authorization-function test and database connection-failure test have been executed and have supporting results.
 
-The complete login flow and actual database review operation remain unverified end to end. The database failure test covers a connection failure, not every possible database error. Evidence screenshots and logs should be retained with the final submission.
+The complete login flow and actual database review operation remain unverified end to end. The database failure test covers a connection failure, not every possible database error. Screenshots for the first three scenarios and logs for the authorization, simulated database-failure, and direct database-connection tests are retained in the repository.
 
 ### Evidence and Integrity Note
 

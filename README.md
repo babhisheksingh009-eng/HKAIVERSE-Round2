@@ -25,7 +25,7 @@ Follow the setup instructions in the Task 1 folder. Keep local environment varia
 - The runtime authorization test passed for simulated student, faculty, and unauthenticated sessions.
 - The simulated database-failure test detected a mocked MySQL connection error.
 - A separate direct MySQL connection test succeeded; its output is saved in `database_connection_test.log`.
-- Normal submission, missing-information validation, and duplicate detection are recorded as user-confirmed. Screenshots or database-query evidence were not retained for those three cases.
+- Screenshots for the normal submission, missing-information validation, and duplicate-submission scenarios are retained in `Task-1-Process-Improvement/evidence/`. These screenshots supplement the user's test observations; no database-query evidence was retained for these three cases. The full login and database workflow has not been independently verified end to end.
 
 These results do not establish that the complete application was tested end to end. See `test_cases.md` and `evidence_log.md` for evidence and limitations.
 

@@ -105,9 +105,9 @@ Test the prototype using five scenarios: normal submission, missing information,
 
 **Status:** PASS — based on user confirmation.
 
-**Evidence reference:** Retain a screenshot of the successful submission, including its reference number and status.
+**Evidence reference:** `evidence/test1_normal_submission.png`.
 
-**Limitation:** A screenshot should be retained to independently demonstrate the result.
+**Limitation:** The screenshot supplements the user-confirmed result; no database-query evidence was retained.
 
 #### Test 2: Missing Information
 
@@ -117,9 +117,9 @@ Test the prototype using five scenarios: normal submission, missing information,
 
 **Status:** PASS — based on user confirmation.
 
-**Evidence reference:** Retain a screenshot of the validation message and rejected submission.
+**Evidence reference:** `evidence/test2_missing_information.png`.
 
-**Limitation:** A screenshot should be retained to independently demonstrate the result.
+**Limitation:** The screenshot supplements the user-confirmed result; no database-query evidence was retained.
 
 #### Test 3: Duplicate Submission
 
@@ -129,9 +129,9 @@ Test the prototype using five scenarios: normal submission, missing information,
 
 **Status:** PASS — based on user confirmation.
 
-**Evidence reference:** Retain a screenshot or database query result showing the duplicate-detection behavior and whether an unintended record was created.
+**Evidence reference:** `evidence/test3_duplicate_submission.png`.
 
-**Limitation:** The precise duplicate-detection rule and database result should be documented using actual test evidence.
+**Limitation:** The screenshot supplements the user-confirmed result; no database-query evidence was retained to independently verify whether a duplicate record was created.
 
 #### Test 4: Authorization Function
 
@@ -177,7 +177,7 @@ Test the prototype using five scenarios: normal submission, missing information,
 3. The normal submission, missing-information, and duplicate-submission results are based on user confirmation.
 4. The authorization-function test was executed successfully using simulated session states.
 5. The database-failure test used a mock object to simulate a MySQL connection error. Separately, a direct MySQL connection test succeeded; its result is saved in `database_connection_test.log`.
-6. The authorization, simulated database-failure, and direct database-connection results have been saved in `authorization_test.log`, `database_failure_test.log`, and `database_connection_test.log`. Screenshots or database evidence for the first three user-confirmed scenarios have not yet been saved.
+6. The authorization, simulated database-failure, and direct database-connection results are saved in `authorization_test.log`, `database_failure_test.log`, and `database_connection_test.log`. Screenshots for the first three user-confirmed scenarios are now saved in `evidence/`; database-query evidence for those scenarios was not retained.
 7. Actual time savings have not been measured.
 
 **Next actions:**
@@ -244,3 +244,15 @@ The normal submission, missing-information, and duplicate-submission results are
 The current evidence does not establish that the identified workflow problem is widespread, that the system is production-ready, or that it produces a specific amount of time savings. The preliminary estimate of six minutes per submission is illustrative and requires validation through timed testing.
 
 Further investigation, retained test evidence, and measured processing times are needed before making claims about actual workflow improvements.
+
+## 23 October 2026 — Screenshots retained
+
+Three screenshots were added to the repository under `evidence/`:
+
+- `test1_normal_submission.png` — normal submission scenario.
+- `test2_missing_information.png` — missing-information scenario.
+- `test3_duplicate_submission.png` — duplicate-submission scenario.
+
+The screenshots supplement the previously recorded user-confirmed results. No database-query evidence was retained for these three scenarios, so the screenshots should not be treated as independent proof of database contents or complete end-to-end behavior. Authorization and simulated database-failure results remain documented in their respective test logs; a separate direct MySQL connection test also succeeded.
+
+**Remaining limitations:** The complete application login and review workflow has not been independently verified end to end. Time savings and process-volume figures remain illustrative estimates, not measured college-wide results.
