@@ -1,0 +1,9 @@
+```csv
+source_type,source_name,url,date_accessed,notes
+Official programme structure,IFHE IcfaiTech B.Tech Programme Structure,https://www.ifheindia.org/icfai-tech-school-hyderabad/icfaitech-btech-program-structure,2026-10-23,Official published structure consulted for course title semester and credit comparison; exact applicability to the 2023 admission batch is unconfirmed.
+Official syllabus archive,IFHE IcfaiTech Syllabus Archive,https://naac2020.ifheindia.org/1.1.3Syllabus%20IcfaiTech.html,2026-10-23,Archive lists B.Tech Computer Science and Engineering syllabus under IFHE231; exact 2023-batch curriculum version and credit details still require verification.
+Job posting,Amazon Software Development Engineer Intern May 2027,https://www.amazon.jobs/en/jobs/10513277/software-development-engineer-intern-may-2027-2-month-amazon-university-talent-acquisition,2026-10-23,Official Amazon careers page consulted; posting date not confirmed during this review.
+Job posting,Microsoft Software Engineering Intern,https://careers.microsoft.com/v2/global/en/students?id=187,2026-10-23,Official Microsoft careers page consulted; page update date previously observed as 2026-10-08; listing location noted as London UK.
+Job posting,Amazon Systems Development Engineer Intern 2027,https://www.amazon.jobs/en/jobs/10498158/systems-development-engineer-intern-2027,2026-10-23,Official Amazon careers page consulted; posting date not confirmed during this review.
+Project verification,AI-assisted exercise verification record,exercises/ai_assisted_exercises.md,2026-10-23,Documents AI prompts, model disclosure, test inputs, results, verification methods, and limitations.
+Project documentation,Interactive curriculum dashboard,app.py,2026-10-23,Streamlit dashboard supports course filtering, comparison, and a listed-credit subtotal calculator; credit totals remain provisional pending official batch verification.

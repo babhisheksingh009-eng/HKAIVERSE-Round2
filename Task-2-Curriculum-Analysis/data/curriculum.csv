@@ -1,0 +1,23 @@
+verification_status,course_title,semester,credits,proposed_decision,recommendation,verification_note
+Proposed,C Programming,1,4,UPDATE,Retain foundations and consider debugging labs,Semester and credits to be checked against official syllabus
+Proposed,Java Programming,3,4,UPDATE,Retain OOP and practical development,Semester and credits to be checked against official syllabus
+Proposed,Python Programming,4,3,UPDATE,Retain programming and strengthen data/API practice,Semester and credits to be checked against official syllabus
+Proposed,Object-Oriented Programming (OOP),3,4,KEEP,Core software design concepts,Semester and credits to be checked against official syllabus
+Proposed,Data Structures and Algorithms,2,4,KEEP,Retain core data structures algorithms and problem-solving practice,Semester and credits to be checked against official syllabus
+Proposed,Theory of Computation,3,3,KEEP,Theoretical CS foundation,Semester and credits to be checked against official syllabus
+Proposed,Computer Organization and Architecture,4,3,KEEP,Computer architecture foundation,Semester and credits to be checked against official syllabus
+Proposed,Operating Systems,5,4,UPDATE,Consider Linux and troubleshooting labs,Semester and credits to be checked against official syllabus
+Proposed,Database Management Systems (DBMS),4,4,UPDATE,Consider SQL practice and secure access,Semester and credits to be checked against official syllabus
+Proposed,Computer Networks,6,4,UPDATE,Consider HTTP and API troubleshooting labs,Semester and credits to be checked against official syllabus
+Proposed,Web-Enabled Technologies,4,4,UPDATE,Consider secure API integration,Semester and credits to be checked against official syllabus
+Proposed,Object-Oriented Analysis and Design (OOAD),5,3,KEEP,Useful for modelling and system design,Semester and credits to be checked against official syllabus
+Proposed,Software Engineering,5,4,UPDATE,Consider Git and testing practice,Semester and credits to be checked against official syllabus
+Proposed,Cloud Computing,6,3,UPDATE,Consider hands-on deployment,Semester and credits to be checked against official syllabus
+Proposed,Machine Learning,5,4,UPDATE,Strengthen model evaluation practice,Semester and credits to be checked against official syllabus
+Proposed,Deep Learning,7,4,UPDATE,Practical neural-network evaluation,Semester and credits to be checked against official syllabus
+Proposed,Natural Language Processing (NLP),7,3,UPDATE,Consider chatbot and LLM applications,Semester and credits to be checked against official syllabus
+Proposed,Human-Computer Interaction (HCI),7,3,UPDATE,Consider usability and accessibility tests,Semester and credits to be checked against official syllabus
+Proposed,Ethical Hacking,7,3,UPDATE,Use authorized security labs,Semester and credits to be checked against official syllabus
+Proposed,Introduction to Entrepreneurship,7,3,KEEP,Supports innovation and business fundamentals,Semester and credits to be checked against official syllabus
+Provisional,Review of Overlapping Introductory Programming Content,VERIFY,VERIFY,REDUCE,Consider reducing duplicated introductory topics only if official syllabus comparison confirms overlap.,Provisional proposal; requires official syllabus comparison and faculty review.
+Provisional,Practical API Integration and Deployment Module,VERIFY,VERIFY,ADD,Consider a practical module if existing courses do not adequately cover API integration and deployment.,"Provisional proposal; check existing course coverage, prerequisites, and credit regulations."
