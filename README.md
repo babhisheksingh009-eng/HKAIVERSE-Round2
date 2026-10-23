@@ -22,7 +22,12 @@ Follow the setup instructions in the Task 1 folder. Keep local environment varia
 
 ### Test results
 
-The authorization and database-failure test scripts were run individually. Their documented results and limitations are in the test and evidence files. The mocked database-failure test does not establish that a real database outage was tested end to end.
+- The runtime authorization test passed for simulated student, faculty, and unauthenticated sessions.
+- The simulated database-failure test detected a mocked MySQL connection error.
+- A separate direct MySQL connection test succeeded; its output is saved in `database_connection_test.log`.
+- Normal submission, missing-information validation, and duplicate detection are recorded as user-confirmed. Screenshots or database-query evidence were not retained for those three cases.
+
+These results do not establish that the complete application was tested end to end. See `test_cases.md` and `evidence_log.md` for evidence and limitations.
 
 ## Task 2: CSE Curriculum Analysis
 
