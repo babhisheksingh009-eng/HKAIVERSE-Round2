@@ -2,132 +2,241 @@
 
 ## 1. Objective
 
-This report evaluates the Computer Science and Engineering curriculum and proposes changes to improve alignment with practical software engineering, data, cloud, and artificial intelligence skills. The recommendations are proposals for academic review, not an official revision of the IFHE curriculum.
+This report evaluates curriculum alignment with practical software engineering, databases, operating systems, cloud computing, data science, and artificial intelligence.
 
-## 2. Decision Categories
+The aim is to preserve essential computer-science foundations while proposing evidence-based improvements to practical learning, assessment, and industry readiness.
 
-- **KEEP:** Retain subjects that provide essential foundational knowledge.
-- **KEEP + UPDATE:** Retain subjects while improving practical work, tools, and contemporary applications.
-- **REDUCE:** Reduce duplicated content or unnecessary repetition where the existing syllabus confirms overlap. This does not automatically mean removing a subject.
-- **ADD:** Introduce a new subject or learning module to address an identified skills gap, subject to academic approval.
+This is a student-led analysis. It is not an official IFHE curriculum revision.
+
+## 2. Evidence Sources and Verification Status
+
+The review uses the following project evidence:
+
+1. Official IFHE/IcfaiTech B.Tech programme structure:
+   https://www.ifheindia.org/icfai-tech-school-hyderabad/icfaitech-btech-program-structure
+
+2. Official IFHE/IcfaiTech syllabus archive:
+   https://naac2020.ifheindia.org/1.1.3Syllabus%20IcfaiTech.html
+
+3. A provisional course dataset:
+   `data/curriculum.csv`
+
+4. A separate reference extract from the published programme structure:
+   `data/official_curriculum_reference.csv`
+
+The reference extract contains 16 course entries with a combined listed-credit subtotal of 57. It is a partial extract, not the complete programme structure or the official total degree credits.
+
+The exact applicability of the published structure to the 2023 admission batch has not been established. Course titles, semesters, credits, and equivalencies must therefore not be presented as verified requirements for that batch.
 
 ## 3. Preliminary Course Recommendations
 
-| Subject | Proposed Decision | Reason |
-|---|---|---|
-| C Programming | KEEP + UPDATE | Include debugging exercises and practical problem-solving tasks. |
-| Java Programming | KEEP + UPDATE | Strengthen object-oriented programming and application development. |
-| Python Programming | KEEP + UPDATE | Include data processing, API use, and automated testing exercises. |
-| Object-Oriented Programming | KEEP | Retain core software design concepts. |
-| Data Structures and Algorithms | KEEP | Maintain foundational data organization and algorithmic problem-solving skills. |
-| Theory of Computation | KEEP | Preserve the theoretical foundation of computer science. |
-| Computer Organization and Architecture | KEEP | Retain knowledge of processor and computer-system fundamentals. |
-| Operating Systems | KEEP + UPDATE | Include Linux commands, process management, and troubleshooting labs. |
-| Database Management Systems | KEEP + UPDATE | Strengthen SQL, database design, and secure data access. |
-| Computer Networks | KEEP + UPDATE | Include HTTP, networking diagnostics, and API communication exercises. |
-| Web-Enabled Technologies | KEEP + UPDATE | Include secure API integration and practical web application development. |
-| Object-Oriented Analysis and Design | KEEP | Maintain system modelling and design skills. |
-| Software Engineering | KEEP + UPDATE | Add version control, code review, and software testing activities. |
-| Cloud Computing | KEEP + UPDATE | Include deployment, configuration, and cloud security fundamentals. |
-| Machine Learning | KEEP + UPDATE | Strengthen model evaluation, data quality, and error analysis. |
-| Deep Learning | KEEP + UPDATE | Include practical neural-network training and evaluation. |
-| Natural Language Processing | KEEP + UPDATE | Include chatbot, language-model, and evaluation exercises. |
-| Human-Computer Interaction | KEEP + UPDATE | Add usability and accessibility testing. |
-| Ethical Hacking | KEEP + UPDATE | Use authorized security laboratories and responsible disclosure exercises. |
-| Introduction to Entrepreneurship | KEEP | Retain innovation and business fundamentals. |
-| Repeated introductory programming topics | REDUCE, if overlap is verified | Compare course syllabi and reduce unnecessary duplication without weakening learning outcomes. |
-| Generative AI and LLM Applications | ADD, subject to approval | Introduce prompt design, retrieval-augmented generation, model evaluation, and responsible AI. |
+The recommendations below are proposals based on course topics and potential practical-learning improvements. They must be checked against the applicable official syllabus before implementation.
 
-**Important:** These are preliminary recommendations based on the subject titles. Before finalizing them, compare the applicable official syllabus and course outcomes. The proposed ADD and REDUCE decisions require evidence that the topics are missing or duplicated.
+| Subject or topic | Proposed decision | Reason |
+|---|---|---|
+| Computer Programming / C Programming | KEEP + UPDATE | Strengthen programming fundamentals through debugging and implementation exercises. Confirm the applicable official course title first. |
+| Java Programming | UPDATE, if applicable | Include object-oriented application development and testing. |
+| Python Programming | UPDATE, if applicable | Add data processing, API use, and automated testing exercises. |
+| Object-Oriented Programming Concepts | KEEP | Preserve core software-design principles. |
+| Data Structures | KEEP + UPDATE | Retain foundational structures and add practical problem-solving exercises. |
+| Design and Analysis of Algorithms | KEEP | Preserve algorithm design, complexity analysis, and problem-solving. |
+| Theory of Computation | KEEP | Retain theoretical computer-science foundations. |
+| Computer Organization and Architecture | KEEP | Preserve processor and computer-system fundamentals. |
+| Operating Systems | KEEP + UPDATE | Include Linux commands, process management, and troubleshooting labs. |
+| Database Management System | KEEP + UPDATE | Strengthen SQL, database design, and secure data access. |
+| Computer Networks | KEEP + UPDATE | Add networking diagnostics, HTTP, and API communication exercises. |
+| Web Enabled Technologies | KEEP + UPDATE | Include secure API integration and practical web application development. |
+| Software Engineering | KEEP + UPDATE | Introduce version control, code review, testing, and collaborative workflows. |
+| Cloud Computing | KEEP + UPDATE | Include deployment, configuration, monitoring, and cloud-security fundamentals. |
+| Artificial Intelligence | KEEP + UPDATE | Strengthen practical problem-solving and responsible AI evaluation. |
+| Machine Learning | KEEP + UPDATE | Include data preparation, model evaluation, and error analysis. |
+| Deep Learning | UPDATE, if applicable | Include practical model training, evaluation, and reproducibility. |
+| Natural Language Processing | UPDATE, if applicable | Include language-processing applications and evaluation. |
+| Human-Computer Interaction | UPDATE, if applicable | Add usability and accessibility testing. |
+| Ethical Hacking | UPDATE, if applicable | Use authorized security laboratories and responsible disclosure exercises. |
+| Introduction to Entrepreneurship | KEEP, if applicable | Retain innovation, business planning, and entrepreneurship fundamentals. |
+| Overlapping introductory programming topics | REDUCE only if verified | Compare official course outcomes and remove unnecessary duplication only when evidence supports it. |
+| Generative AI and LLM Applications | ADD only if justified | Consider prompt evaluation, retrieval-augmented generation, model assessment, and responsible AI if these outcomes are not adequately covered elsewhere. |
+| Practical API Integration and Deployment | ADD or integrate into existing labs | First establish whether current courses already teach these skills. A separate course is not automatically necessary. |
+
+The phrase "if applicable" indicates that a subject's presence and exact title in the 2023-batch curriculum remain to be confirmed.
 
 ## 4. Reasons Supporting the Recommendations
 
-1. Programming courses should include debugging and practical implementation, not only syntax.
-2. Data Structures and Algorithms support problem-solving and coding assessments.
-3. Linux exercises provide experience with operating-system commands and troubleshooting.
-4. SQL and database-design practice help students develop reliable data-driven applications.
-5. Networking labs help students understand HTTP, APIs, and application communication.
-6. Git and code review introduce collaborative software-development practices.
-7. Automated testing helps students identify defects before deployment.
+1. Programming exercises should include debugging, testing, and practical implementation.
+2. Data structures and algorithms support problem-solving and coding assessments.
+3. Operating-system labs provide experience with commands, processes, and troubleshooting.
+4. SQL and database-design practice help students build reliable data-driven applications.
+5. Networking exercises help students understand HTTP, APIs, and application communication.
+6. Version control introduces collaborative development and change tracking.
+7. Automated testing helps detect defects before deployment.
 8. Cloud deployment provides practical experience with application hosting and configuration.
-9. Machine-learning evaluation teaches students to assess model performance rather than relying only on accuracy claims.
-10. NLP and LLM exercises can develop skills in conversational applications and language processing.
-11. Accessibility and usability testing encourage the development of software that works for different users.
-12. Comparing course learning outcomes can identify duplicated topics and justify REDUCE proposals.
+9. Machine-learning evaluation teaches students to assess model performance using appropriate metrics.
+10. NLP and LLM exercises can develop skills in language-processing applications.
+11. Accessibility and usability testing encourage more inclusive software design.
+12. Comparing course outcomes can reveal duplicated content and help justify REDUCE proposals.
 
-These reasons must be strengthened with official syllabus evidence and actual job-description comparisons.
+These are curriculum-design reasons, not proof that a particular employer requires every listed skill. Employer-specific claims must be supported by real job advertisements.
 
-## 5. Industry Skill-Gap Evidence
+## 5. Official Curriculum Comparison
 
-At least three real, dated job descriptions must be examined before this section can be treated as complete.
+The project contains two datasets:
 
-For each job description, record:
+- `data/curriculum.csv`: 22 preliminary entries consisting of 20 proposed course entries and two provisional recommendations.
+- `data/official_curriculum_reference.csv`: a partial extract containing 16 entries from the published IFHE/IcfaiTech programme structure.
 
-- Employer and job title.
-- Job posting date, where available.
-- URL and access date.
-- Required programming languages and tools.
-- Required software-development, database, cloud, data, or AI skills.
-- Relevant curriculum subject and proposed response.
+The preliminary dataset lists 71 credits across its numeric-credit entries. The published reference extract lists 57 credits across the 16 entries included in that extract.
 
-Do not invent job postings or claim that a skill is required unless the advertisement supports that statement.
+Neither number should be described as the official total degree credits.
 
-## 6. Proposed Curriculum Redesign
+The published reference includes examples such as:
 
-Potential improvements include practical Linux labs, SQL and API exercises, Git-based teamwork, automated testing, cloud deployment, and an AI-assisted capstone.
+- Computer Programming — Semester I
+- Data Structures — Semester II
+- Object Oriented Programming Concepts — Semester III
+- Operating Systems — Semester III
+- Database Management System — Semester IV
+- Machine Learning — Semester V
+- Cloud Computing — Semester VI
 
-The final redesign must calculate the credits affected as a proportion of the actual programme credit total:
+These examples are taken from the project's published-structure reference extract. They do not establish that the same course structure applies to the 2023 admission batch.
 
-Percentage affected = credits affected by the proposal / total programme credits × 100
+Before finalizing course equivalencies, compare the applicable official syllabus, course codes, learning outcomes, semester assignments, credits, prerequisites, and academic regulations.
 
-The target is approximately 20–25%, as required by the assignment. Record the original total, proposed changes, revised total, prerequisites, and applicable academic or regulatory conditions.
+## 6. Industry Skill-Gap Evidence
 
-Do not finalize the calculation until the official programme credit total and course values have been verified.
+Industry alignment must be supported by at least three real job advertisements.
 
-## 7. Task 1 Integration
+Potential sources already recorded in `sources/source_log.csv` include:
 
-A possible capstone is an AI-assisted curriculum-analysis and review workflow. It could collect permitted course information, compare learning outcomes, identify potential overlap, document evidence, and generate recommendations for faculty review.
+1. Amazon — Software Development Engineer Intern, May 2027:
+   https://www.amazon.jobs/en/jobs/10513277/software-development-engineer-intern-may-2027-2-month-amazon-university-talent-acquisition
 
-The capstone should use synthetic or publicly available data where appropriate. It should not require live college-system integration or collect private student information.
+2. Amazon — Systems Development Engineer Intern, 2027:
+   https://www.amazon.jobs/en/jobs/10498158/systems-development-engineer-intern-2027
 
-The final report must explain which components were developed from Task 1 and which are proposed extensions.
+3. Microsoft student careers page:
+   https://careers.microsoft.com/v2/global/en/students?id=187
 
-## 8. AI-Assisted Exercises
+The Microsoft URL is a general student-careers page, not yet a verified specific job advertisement. It must not be counted as a confirmed third posting until a specific role and its requirements are documented.
 
-The project must document one AI-assisted exercise in each of five subjects. For each exercise, record:
+For each confirmed advertisement, record:
 
-- Subject and learning objective.
+- Employer and exact job title.
+- Publication date, if stated.
+- Location and job level.
+- URL and actual access date.
+- Required and preferred technical skills, distinguished clearly.
+- Evidence connecting those skills to a course or learning outcome.
+- A proposed curriculum response and the reason for it.
+
+Do not invent posting dates or claim that an employer requires a skill unless the advertisement supports that claim.
+
+## 7. Proposed Curriculum Redesign
+
+The proposed improvements focus on practical learning:
+
+- Programming and debugging laboratories.
+- SQL, database design, and secure data-access exercises.
+- Linux and operating-system troubleshooting.
+- Git-based teamwork and code review.
+- Automated testing and software-quality assessment.
+- API integration and cloud deployment.
+- Data preparation and model evaluation.
+- Responsible AI and LLM application evaluation where justified by evidence.
+
+These changes should preferably update existing laboratory work before adding new courses. A new course should be proposed only when the existing curriculum does not adequately cover the intended learning outcomes.
+
+### Credit-balance calculation
+
+The assignment requests changes affecting approximately 20–25% of programme credits.
+
+The calculation must use the applicable official programme total:
+
+Percentage affected = credits affected by the proposal / official programme credits × 100
+
+The official total and the credits affected by the final proposal are not yet verified. Therefore, a final percentage cannot responsibly be reported at this stage.
+
+The final redesign should state:
+
+- Verified original programme credit total.
+- Courses or modules changed.
+- Credits affected, without double-counting courses.
+- Revised credit total.
+- Prerequisites and dependencies.
+- Applicable academic and regulatory conditions.
+
+Updating laboratory exercises within an existing course should not automatically be counted as removing or replacing all of that course's credits.
+
+## 8. Task 1 Integration
+
+The proposed capstone is an AI-assisted curriculum-analysis and review workflow.
+
+Potential functions include:
+
+1. Import permitted course and learning-outcome information.
+2. Compare course outcomes with documented job requirements.
+3. Identify possible overlap for human review.
+4. Recommend practical exercises or assessment improvements.
+5. Record sources, evidence, dates, and verification results.
+6. Generate a report for faculty review.
+7. Display course comparisons and provisional credit calculations.
+
+The system should use public or synthetic data where appropriate. It should not require unauthorized access to college systems or collect private student information.
+
+The report must distinguish components implemented in Task 1 from future extensions that are only proposed.
+
+## 9. AI-Assisted Exercises
+
+The project records five exercises in:
+
+`exercises/ai_assisted_exercises.md`
+
+The subjects covered are:
+
+1. C programming.
+2. Data structures and algorithms.
+3. Database management systems.
+4. Operating systems.
+5. Machine learning.
+
+For each exercise, the evidence should include:
+
+- Learning objective.
 - Exact prompt.
-- AI model used.
-- Date of use.
-- Output produced.
-- Verification method and corrections made.
+- AI model and date of use.
+- Generated output or a concise output record.
+- Test inputs and expected results.
+- Actual results and verification method.
+- Corrections and limitations.
 
-The five exercises should be tested and verified before they are described as completed. Do not claim to have run an exercise or verified its output if you have not done so.
+Only completed and documented tests should be described as executed. A logical review of code is not the same as compiling and running the code, and checking a metric calculation is not the same as training and evaluating a machine-learning model.
 
-## 9. Faculty or Graduate Feedback
+## 10. Faculty or Graduate Feedback
 
-Record voluntary feedback only if it is actually received and permission is given to use it. If faculty or graduate feedback cannot be accessed, explicitly state that feedback was unavailable and explain the limitation.
+Feedback should be included only if it is genuinely received and permission is available to use it.
 
-Do not invent quotations, names, or endorsements.
+If faculty or graduate feedback could not be obtained, state that clearly and explain that the proposal is based on documentary research and independent analysis instead.
 
-## 10. Limitations and Verification
+Do not invent quotations, participants, or endorsements.
 
-The proposed recommendations are student work and are not an official syllabus revision. Semester numbers, credits, regulations, and course equivalencies must be checked against the official programme structure for the applicable branch, admission batch, and curriculum version.
+## 11. Limitations and Verification
 
-Job-market evidence must be dated and traceable. AI-generated content must be independently checked. Proposed curriculum changes require appropriate academic approval before implementation.
+The main limitations are:
 
-## 11. Conclusion
+- The applicable 2023-batch syllabus has not been confirmed.
+- The official programme reference is a partial extract.
+- The listed-credit subtotals are not the official degree-credit total.
+- A complete comparison of official course outcomes has not yet been established.
+- At least three specific job advertisements still need fully documented evidence.
+- Proposed REDUCE and ADD decisions require evidence of duplication or a genuine coverage gap.
+- Faculty or graduate feedback must not be claimed unless actually obtained.
+- AI-generated content and calculations require independent verification.
 
-The proposed review aims to preserve essential computer-science foundations while strengthening practical development, testing, cloud deployment, data, and AI learning. Final recommendations should be based on verified curriculum documents, real job-description evidence, documented AI-exercise verification, balanced credit calculations, and transparent limitations.
-## Official Curriculum Verification
+The project is a student proposal and does not constitute an approved change to university regulations.
 
-The current curriculum dataset is a preliminary analytical dataset and must not be treated as the official curriculum for the 2023 admission batch.
+## 12. Conclusion
 
-A comparison with the currently published IFHE/IcfaiTech B.Tech Computer Science and Engineering programme structure identified differences in course titles, semester assignments, and course coverage. For example, the published structure lists Object Oriented Programming Concepts and Operating Systems in Semester III, whereas the preliminary dataset places some related courses in different semesters.
+The proposed review aims to preserve core computer-science knowledge while strengthening practical software development, testing, databases, cloud deployment, data analysis, and AI learning.
 
-Official programme structure: https://www.ifheindia.org/icfai-tech-school-hyderabad/icfaitech-btech-program-structure
-
-The exact applicability of this published structure to the 2023 admission batch remains unconfirmed. Therefore, the existing 71-credit subtotal is provisional and is not the official degree-credit total.
-
-Before making definitive KEEP, UPDATE, REDUCE, or ADD recommendations, the applicable 2023-batch syllabus and regulations must be verified. Proposed curriculum changes must remain separate from official university requirements.
+Final recommendations should be based on the applicable official syllabus, traceable job advertisements, documented exercise verification, balanced credit calculations, and transparent limitations. Until the correct admission-batch curriculum is confirmed, course mappings and credit-change percentages remain provisional.

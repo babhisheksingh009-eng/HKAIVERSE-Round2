@@ -1,76 +1,85 @@
 # Industry Skill-Gap Analysis
 
 **Analysis date:** 23 October 2026
-**Purpose:** Compare selected CSE curriculum topics with published employer requirements.
 
-## Job Description 1: Amazon Software Development Engineer Intern – May 2027
+## Purpose
 
-Source:
-https://www.amazon.jobs/en/jobs/10513277/software-development-engineer-intern-may-2027-2-month-amazon-university-talent-acquisition
+Compare selected computer science curriculum topics with requirements stated in three employer career listings. These examples are illustrative, not a statistically representative survey of the technology industry.
 
-Access date: 23 October 2026
-Posting date: Not confirmed during this review.
+## Job 1: Amazon Software Development Engineer Intern – May 2027
 
-Requirements observed:
-- At least one general-purpose programming language
-- Data structures, algorithms, and object-oriented design
-- Database systems and cloud platforms
-- Version control, debugging, and troubleshooting
-- Software development lifecycle, testing, and code reviews
-- Communication and problem-solving
+**Official source:** https://www.amazon.jobs/en/jobs/10513277/software-development-engineer-intern-may-2027-2-month-amazon-university-talent-acquisition
 
-Curriculum implications:
-Retain core programming and DSA. Update Software Engineering, DBMS, and Cloud Computing with practical testing, version control, database, and deployment exercises.
+**Access date:** 23 October 2026
+**Posting date:** Not independently confirmed.
 
-## Job Description 2: Microsoft Software Engineering Intern
+### Requirements observed
 
-Source:
-https://careers.microsoft.com/v2/global/en/students?id=187
+- Programming in at least one general-purpose language.
+- Data structure implementation, basic algorithms, and object-oriented design.
+- Preferred experience with cloud platforms, SQL/NoSQL databases, version control, debugging, and AI development tools.
+- Basic software development lifecycle knowledge.
+- Problem-solving, communication, code reviews, technical documentation, and distributed systems.
 
-Page update date shown: 8 October 2026
-Access date: 23 October 2026
-Location limitation: London, United Kingdom.
+### Curriculum implications
 
-Requirements observed:
-- Software design, development, and testing
-- Product quality and customer-focused engineering
-- Collaboration with technical and product teams
-- Learning and applying relevant tools and technologies
+Retain core programming, DSA, and OOP. Add or strengthen practical work involving Git, testing, SQL, cloud deployment, debugging, documentation, and a small distributed application.
 
-Curriculum implications:
-Update Software Engineering with testing, code review, documentation, teamwork, and iterative development. Include usability and product-quality checks in project assessments.
+## Job 2: Microsoft Software Engineering Intern
 
-## Job Description 3: Amazon Systems Development Engineer Intern – 2027
+**Official source:** https://careers.microsoft.com/v2/global/en/students?jobSeqNo=872542
 
-Source:
-https://www.amazon.jobs/en/jobs/10498158/systems-development-engineer-intern-2027
+**Page update date displayed:** 8 October 2026
+**Access date:** 23 October 2026
+**Location:** London, United Kingdom.
 
-Access date: 23 October 2026
-Posting date: Not confirmed during this review.
+### Requirements observed
 
-Requirements observed:
-- Programming or scripting
-- Operating systems and object-oriented design
-- Algorithms, data structures, and complexity analysis
-- Relational databases and distributed systems
-- Problem-solving and communication
+The listing describes software design, development, and testing; customer and product quality; collaboration with technical and product teams; and learning and applying relevant tools and technologies.
 
-Curriculum implications:
-Retain DSA and Operating Systems. Update practical work to include Linux troubleshooting, database integration, testing, and basic distributed-application concepts.
+### Curriculum implications
+
+Update Software Engineering projects to include testing, code review, documentation, teamwork, and iterative development. Add usability and product-quality checks to project assessment.
+
+### Applicability limitation
+
+This role is located in the United Kingdom. Its requirements are used as an example of employer expectations, not as evidence of Indian hiring eligibility or local labour-market demand.
+
+## Job 3: Amazon Systems Development Engineer Intern – 2027
+
+**Official source:** https://www.amazon.jobs/en/jobs/10498158/systems-development-engineer-intern-2027
+
+**Access date:** 23 October 2026
+**Posting date:** Not independently confirmed.
+
+### Requirements observed
+
+- Programming or scripting in languages such as Java, C/C++, or Python.
+- Object-oriented design, operating systems, algorithms, data structures, and complexity analysis.
+- Problem-solving and verbal and written communication.
+- Preferred knowledge of distributed, multi-tiered systems and relational databases.
+
+### Curriculum implications
+
+Retain DSA and Operating Systems. Strengthen Linux troubleshooting, database integration, system design fundamentals, and practical work with multi-tier applications.
 
 ## Cross-Job Skill-Gap Summary
 
-| Skill area | Relevant existing courses | Proposed action |
+| Skill area | Relevant courses | Proposed action |
 |---|---|---|
 | Programming and problem-solving | C, Java, Python, DSA | KEEP core outcomes; UPDATE practical exercises |
-| Databases | DBMS | UPDATE SQL practice, secure queries, and integration |
-| Software development practices | Software Engineering, OOAD | UPDATE testing, Git, code review, and documentation |
+| Object-oriented design | OOP, OOAD | KEEP; add design and implementation exercises |
+| Databases | DBMS | UPDATE SQL practice, parameterised queries, and application integration |
+| Software development practices | Software Engineering | UPDATE testing, Git, code review, and documentation |
 | Operating systems | Operating Systems | UPDATE Linux and troubleshooting labs |
-| Cloud and deployment | Cloud Computing, Web-Enabled Technologies | UPDATE hands-on deployment and API integration |
+| Cloud and deployment | Cloud Computing, Web-Enabled Technologies | UPDATE deployment and API integration exercises |
+| Distributed applications | Computer Networks, Cloud Computing | ADD practical multi-tier application work within existing course projects |
 | Product quality and communication | HCI, Software Engineering | UPDATE usability testing, teamwork, and project documentation |
 
-## Limitations
+## Method and Limitations
 
-The three job descriptions are illustrative samples, not a statistically representative survey of the entire technology labour market. Two Amazon pages did not provide a posting date that I could confirm during this review. The Microsoft role is based in the United Kingdom. Requirements may change, so preserve copies or dated evidence of the pages used in the final submission.
+The analysis records requirements visible on the cited employer pages as accessed on 23 October 2026. The Microsoft page displays an update date of 8 October 2026; that is not necessarily its original posting date. The original posting dates for the two Amazon listings were not independently confirmed during this review.
 
-The curriculum recommendations are proposals by the student. They are not official changes to IFHE's syllabus.
+The job descriptions are examples, not a representative sample of all employers. Requirements can change. The Microsoft example is UK-based, and the Amazon listings have their own eligibility and location conditions. These examples do not establish that every listed skill is mandatory for every graduate role.
+
+The curriculum recommendations are proposals, not official changes to IFHE's syllabus. The applicable official curriculum version for the relevant admission batch must be confirmed separately before final credit or semester changes are approved.

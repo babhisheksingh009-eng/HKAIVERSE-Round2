@@ -121,7 +121,23 @@ All three test cases passed:
 
 **Recovery:** Check the database service and configuration, restore connectivity, and retry the operation safely.
 ---
+### Decision Responsibility and Recovery Matrix
 
+| Scenario | System response | Responsible person | Recovery or next step |
+|---|---|---|---|
+| Normal submission | Validate required fields, save the submission and assign a reference number. | Student submits; authorized faculty member reviews. | If saving fails, display an error. Retry only after checking whether the original submission was saved. |
+| Missing information | Reject the incomplete submission and identify the missing field. | Student corrects the information. | Complete the required field and submit again. |
+| Duplicate submission | Flag a possible duplicate and avoid creating an unintended second record. | Student explains whether a new submission is intentional; authorized faculty member resolves ambiguity if required by policy. | Open the existing record or proceed through an explicitly supported new-submission process. |
+| Unauthorized request | Deny the restricted action and avoid changing the review record. | The application enforces permissions; an authorized administrator investigates repeated access problems if necessary. | Return to the permitted dashboard or request access through the approved process. |
+| Database connection failure | Show a clear failure message and do not report the save as successful. | System administrator or designated technical support restores service; the student retries after checking submission status. | Restore connectivity, verify whether the original operation succeeded, and retry safely. |
+
+**Approval boundary:** Students may submit and correct their own project information. Only authorized faculty members may perform faculty-only review actions. Technical support may restore service but must not make academic review decisions.
+
+**Audit record:** Where implemented, record the submission reference, timestamp, action, actor's authorized role, previous and new status, and success or failure outcome. Do not record passwords, authentication tokens, or unnecessary personal information.
+
+**Fallback:** If the application is unavailable, students should follow the institution's existing approved submission procedure. This fallback is a proposal and must not be represented as an existing official policy without verification.
+
+**Testing limitation:** The matrix specifies intended behavior. Each behavior must be tested before it can be claimed as implemented. In particular, safe retry, audit-record creation, and real database-outage recovery have not been independently demonstrated by the tests described above.
 ## Testing Record Summary
 
 | Test | Scenario | Result | Evidence |

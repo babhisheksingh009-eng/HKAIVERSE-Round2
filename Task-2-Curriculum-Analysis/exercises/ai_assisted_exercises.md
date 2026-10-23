@@ -12,9 +12,12 @@
 
 **Output summary:** An exercise covering integer input, modulo, and even/odd classification.
 
-**Verification performed:** Tested the even/odd logic using Python for inputs 0, 2, -3, and 7. All expected classifications passed.
+**Verification performed:**
+- Tested the even/odd logic using Python for inputs 0, 2, -3, and 7; all expected classifications passed.
+- Compiled `exercises/even_odd.c` using GCC with `-Wall -Wextra -Werror`; compilation succeeded without reported warnings or errors.
+- Ran the compiled program with inputs `2`, `-3`, and `abc`. The program correctly classified 2 as even, -3 as odd, and rejected `abc` as invalid input.
 
-**Result:** PASS for the tested logic. A C implementation has not yet been compiled, and invalid-input handling has not yet been tested in C.
+**Result:** PASS for the documented tests. The C program's tested inputs and invalid-input handling behaved as expected. Additional edge cases, such as integer values outside the supported range, have not been tested.
 
 ## 2. Data Structures and Algorithms
 

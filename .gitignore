@@ -16,3 +16,8 @@ venv/
 
 # Local configuration
 .DS_Store
+# Local backup files
+Task-2-Curriculum-Analysis-Updated.zip
+Task-2-Curriculum-Analysis/sources/source_log_backup.csv
+Task-2-Curriculum-Analysis/exercises/even_odd
+.pytest_cache/

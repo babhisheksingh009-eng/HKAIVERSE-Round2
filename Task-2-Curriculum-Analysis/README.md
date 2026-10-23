@@ -9,11 +9,14 @@ This project presents a preliminary review of computer science courses, practica
 ## Project Structure
 
 - `data/curriculum.csv` — proposed course list, recommendations, and verification notes.
-- `data/curriculum_before_verification.csv` — backup of the curriculum dataset before verification-related changes.
+- `data/curriculum_before_verification.csv` — retained reference copy of the earlier curriculum dataset.
+- `data/official_curriculum_reference.csv` — partial extract of a published programme structure; applicability to the 2023 admission batch is unconfirmed.
 - `analysis/curriculum_review.md` — preliminary course review and recommendations.
 - `analysis/industry_skill_gap.md` — comparison of skills identified in selected job descriptions.
 - `analysis/revised_curriculum.md` — proposed practical learning improvements and curriculum changes.
 - `exercises/ai_assisted_exercises.md` — AI-assisted exercises, test cases, results, and limitations.
+- `exercises/verify_exercises.py` — repeatable checks for selected exercise logic and calculations.
+- `exercises/even_odd.c` — C programming exercise source code; the compiled binary is excluded from version control.
 - `sources/source_log.csv` — source URLs, access dates, and verification notes.
 - `app.py` — interactive Streamlit dashboard.
 - `requirements.txt` — Python dependencies.
@@ -93,9 +96,7 @@ Passing a logic or arithmetic check does not necessarily establish that a comple
 
 ## Personal Contribution
 
-This project combines curriculum-data organization, source documentation, industry skill-gap analysis, AI-assisted exercise verification, and Streamlit dashboard development.
-
-Only work personally completed and verified should be claimed as an individual contribution.
+My contribution to this project includes organizing the provisional curriculum dataset, documenting source references and limitations, preparing the industry skill-gap analysis, implementing the Streamlit dashboard, and recording and running the documented exercise verification checks. The official admission-batch curriculum and complete programme credit total remain unverified.
 
 ## Final Checklist
 

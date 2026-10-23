@@ -186,3 +186,14 @@ A real deployment would require appropriate institutional approval, secure accou
 SkillBridge AI proposes a structured approach to academic project submission and review. It introduces validation, submission references, review statuses, faculty feedback, role-based access checks, and error handling.
 
 The next stage is to verify the current workflow, collect appropriate evidence, and measure the prototype against defined performance indicators before claiming measurable improvements.
+### 14. Decision Rule: When to Change or Abandon the Proposal
+
+SkillBridge AI should not be adopted simply because a prototype has been developed.
+
+I would reconsider or abandon the proposed system if permission-based investigation showed that the existing submission process already provides reliable tracking, timely feedback, and an acceptable workload, leaving little or no meaningful problem to solve.
+
+I would also reconsider the design if measured trials showed that operating the system, reviewing submissions, handling errors, and supporting users required as much or more time than the existing process.
+
+Before recommending adoption, I would compare the existing and proposed workflows using the same representative synthetic cases and record the time, errors, recovery effort, and user feedback. Any recommendation would remain conditional on institutional approval, appropriate security controls, and evidence of a genuine improvement.
+
+**Current position:** These are decision criteria for future evaluation, not findings from a completed field study.
