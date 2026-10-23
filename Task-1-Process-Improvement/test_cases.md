@@ -22,7 +22,7 @@ Test the proposed project submission and review workflow using five scenarios. T
 
 **Status:** PASS — based on user testing and confirmation.
 
-**Evidence:** Retain a screenshot showing the successful submission, reference number, and status.
+**Evidence available:** User confirmation that normal submission works. No screenshot was retained for this test.
 
 **Recovery:** If saving fails, display an error and allow the student to retry safely.
 
@@ -43,7 +43,7 @@ Test the proposed project submission and review workflow using five scenarios. T
 
 **Status:** PASS — based on user testing and confirmation.
 
-**Evidence:** Retain a screenshot showing the validation message when a required field is missing.
+**Evidence available:** User confirmation that required-field validation works. No screenshot was retained for this test.
 
 **Recovery:** The student completes the missing information and resubmits.
 
@@ -64,7 +64,7 @@ Test the proposed project submission and review workflow using five scenarios. T
 
 **Status:** PASS — based on user testing and confirmation.
 
-**Evidence:** Retain a screenshot or database query result demonstrating duplicate detection and whether an unintended duplicate record was prevented.
+**Evidence available:** User confirmation that duplicate detection works. No screenshot or database query result was retained for this test.
 
 **Recovery:** The student can open the existing submission or explicitly confirm a legitimate new submission, if supported by the application.
 
@@ -126,9 +126,9 @@ All three test cases passed:
 
 | Test | Scenario | Result | Evidence |
 |---|---|---|---|
-| 1 | Normal submission | PASS — user-confirmed | Successful submission screenshot to retain |
-| 2 | Missing information | PASS — user-confirmed | Validation screenshot to retain |
-| 3 | Duplicate submission | PASS — user-confirmed | Duplicate detection evidence to retain |
+| 1 | Normal submission | PASS — user-confirmed | User confirmation; screenshot not retained |
+| 2 | Missing information | PASS — user-confirmed | User confirmation; screenshot not retained |
+| 3 | Duplicate submission | PASS — user-confirmed | User confirmation; screenshot/database evidence not retained |
 | 4 | Unauthorized request | PASS — authorization-function test | Runtime test output |
 | 5 | Database connection failure | PASS — connection-failure handling | Application or terminal error output |
 
