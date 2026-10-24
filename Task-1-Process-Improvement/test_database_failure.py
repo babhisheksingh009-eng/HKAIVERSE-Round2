@@ -1,17 +1,17 @@
-
-from unittest.mock import Mock
+import pytest
 import mysql.connector
+from unittest.mock import Mock
 
-# Simulate a failed database connection
-mock_connection = Mock()
-mock_connection.side_effect = mysql.connector.Error(
-    "Simulated database connection failure"
-)
 
-try:
-    mock_connection()
-    print("TEST FAILED: Database failure was not detected.")
+def test_database_connection_failure_is_detected():
+    mock_connection = Mock(
+        side_effect=mysql.connector.Error(
+            "Simulated database connection failure"
+        )
+    )
 
-except mysql.connector.Error:
-    print("TEST PASSED: Database connection failure was detected.")
-    print("TEST PASSED: The simulated failure was handled.")
+    with pytest.raises(
+        mysql.connector.Error,
+        match="Simulated database connection failure"
+    ):
+        mock_connection()
