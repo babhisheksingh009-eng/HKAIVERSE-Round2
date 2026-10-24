@@ -303,3 +303,21 @@ Use synthetic data for demonstrations and tests. Do not collect or publish stude
 ### Time-Saving Estimates
 
 The proposed six-minute saving per request and the monthly scenarios are illustrative calculations, not measured institutional results. Implementation effort, maintenance costs, request volume, and actual time savings remain unverified.
+
+## Dated Evidence and Verification Addendum
+
+**Documentation/test record date:** 2026-10-24
+**Scope:** Local prototype and synthetic test evidence only.
+
+| Evidence item | Recorded result | What it supports | What it does not establish |
+|---|---|---|---|
+| Runtime authorization script (`test_authorization_runtime.py`) | Command exited with code 0 on 2026-10-24 | The script completed successfully | Real institutional authorization policy or live-system security |
+| Database failure script (`test_database_failure.py`) | Command exited with code 0 on 2026-10-24 | The scripted failure test completed successfully | Recovery from an actual production database outage |
+| Task 2 exercise verifier | All 14 displayed checks passed on 2026-10-24 | The listed logic, synthetic SQL, scheduling and arithmetic checks | Training or validation of an ML model |
+| Git whitespace check (`git diff --check`) | No output; command chain continued | No whitespace errors were reported by that check | Content correctness or assignment completeness |
+| Normal, missing-information and duplicate-request cases | Existing screenshots/user-confirmed prototype outcomes are documented in the test-case/evidence materials | Illustrative prototype behavior as recorded | Independent database-state verification or real college operation |
+| Actual college process | Zero independently verified operational requests; no completed interview, permission-based operational observation or independently verified official process document is claimed | Explicit access limitation | Any claim that the hypothetical process is the actual ICFAI process |
+
+The command exit codes and check results above were reported from the local terminal. Screenshot capture dates and independent database-query evidence are not inferred where they have not been recorded. The request volume, current effort, rework rate, proposed effort and break-even calculations in the report are planning assumptions, not measured observations.
+
+Future evidence must record the date, method, synthetic/authorized sample size, result, and limitations. If access is refused, preserve the hypothetical walkthrough and do not invent interviews or observations.

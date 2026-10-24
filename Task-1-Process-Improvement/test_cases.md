@@ -185,3 +185,15 @@ These results do not establish that the complete application has passed end-to-e
 A test should be described as independently evidenced only when its corresponding screenshot, log, or database result has been retained and can be inspected. User confirmation, executed test output, and proposed but untested behavior must remain clearly distinguished.
 
 The test results describe the local prototype and its supporting test scripts. They do not establish that SkillBridge AI has been deployed or approved by ICFAI, or that the proposed workflow has improved the institution's actual process.
+
+## Test Coverage, Expected Recovery and Limitations Addendum
+
+| Scenario | Expected result | Recovery | Current evidence boundary |
+|---|---|---|---|
+| Normal submission | Valid request is accepted and assigned a reference/status | Authorized reviewer processes it; requester checks status | Existing prototype screenshot/user-confirmed outcome; not a live college deployment |
+| Missing information | Missing required fields are identified and approval does not proceed | Requester corrects fields and resubmits | Synthetic scenario |
+| Duplicate submission | Matching request is flagged to prevent silent duplicate processing | Show existing reference; process owner resolves ambiguous matches | Synthetic scenario; no real duplicate-rate measurement |
+| Unauthorized request | Unauthenticated/unauthorized action is denied | Sign in with permitted role or escalate to the authorized owner | Runtime authorization script completed with exit code 0; no claim about real institutional policy |
+| Database or step failure | Failure is visible and is not reported as successful completion | Retry safely or escalate; verify persistence before retrying | Database failure script completed with exit code 0; mocked/scripted failure, not a real outage |
+
+**Verification date:** 2026-10-24. The local runtime authorization and database-failure scripts both completed with exit code 0 when run in the terminal. The Task 2 exercise verifier separately reported 14 passing checks; it is not a Task 1 test. A successful script exit is evidence of script completion, not proof that every live-system condition has been tested.

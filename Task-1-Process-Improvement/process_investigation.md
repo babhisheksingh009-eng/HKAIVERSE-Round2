@@ -439,3 +439,82 @@ The actual project-submission and faculty-review process at ICFAI has not been i
 The evidence consists of the proposed workflow, prototype tests, synthetic test cases, and illustrative calculations. The hypothetical current-process time of 12 minutes per request and estimated net saving of 6 minutes per request are planning assumptions, not measured results.
 
 Before real deployment, the relevant process owner would need to confirm the current steps, responsibilities, request volume, handling time, rework rate, and approved fallback procedure. No student personal or confidential academic information should be included in the report.
+
+## Final Requirement Closure — Workflow, ROI, Safety and Decision Criteria
+
+### Fieldwork status and permission boundary
+
+This investigation uses an explicitly hypothetical walkthrough because the actual college process has not been independently verified. No student interview, faculty/process-owner interview, permission-based operational observation, or independent verification of official process documentation is claimed. The independently verified operational request sample is zero. The walkthrough identifies possible steps and failure points for future investigation; it does not establish that these problems occur at ICFAI.
+
+Any future fieldwork must begin with permission, stop if permission is declined, and avoid disrupting college activities. Record a participant's role only, if a voluntary conversation occurs. Do not collect names, student IDs, marks, fees, signatures, credentials, private messages, or other confidential information. Use synthetic examples for prototype testing.
+
+### Hypothetical current workflow and accountable roles
+
+| Step | Responsible role (proposed/hypothetical) | Action | Handoff or exception |
+|---|---|---|---|
+| 1 | Student/requester | Prepares a request and required information | Missing information requires correction |
+| 2 | Receiving staff/process owner | Receives and checks the request | Incomplete requests are returned with a reason |
+| 3 | Process owner | Records receipt and current status | Duplicate requests are flagged and linked to the existing request |
+| 4 | Authorized reviewer | Reviews the request against applicable requirements | Only the authorized decision-maker may approve or reject |
+| 5 | Requester and process owner | Receive the decision/status update | Failed notification or system step is escalated and logged |
+| 6 | Process owner | Closes the request and retains an appropriate audit record | Unresolved cases remain open and are escalated |
+
+This is a proposed model, not a verified map of the college's existing responsibilities.
+
+### Effort and return-on-investment calculation
+
+All figures below are illustrative planning assumptions, not measured college timings or request volumes.
+
+**Hypothetical current effort per request**
+- Initial handling: 6 minutes.
+- Status follow-up: 4 minutes.
+- Expected rework: 20% of requests require 10 additional minutes on average; expected rework per request = 0.20 × 10 = 2 minutes.
+- Total expected current effort = 6 + 4 + 2 = **12 minutes per request**.
+
+**Hypothetical proposed effort per request**
+- Submission and validation: 3 minutes.
+- Status check: 1 minute.
+- Review/support/error-handling allowance: 2 minutes.
+- Total proposed effort = 3 + 1 + 2 = **6 minutes per request**.
+- Illustrative net saving = 12 − 6 = **6 minutes per request**.
+
+| Assumed requests per month | Current effort | Proposed effort | Illustrative net saving |
+|---:|---:|---:|---:|
+| 20 | 240 minutes (4 hours) | 120 minutes (2 hours) | 120 minutes (2 hours) |
+| 60 | 720 minutes (12 hours) | 360 minutes (6 hours) | 360 minutes (6 hours) |
+| 100 | 1,200 minutes (20 hours) | 600 minutes (10 hours) | 600 minutes (10 hours) |
+
+Assume a one-time implementation effort of 6 hours (360 minutes). At an illustrative saving of 6 minutes per request, simple break-even is 360 ÷ 6 = **60 requests**. This excludes unmeasured recurring maintenance and any costs not represented in the per-request allowance. If real support/maintenance costs increase or net savings are lower, break-even will occur later or may never occur. The monthly request range of 20–100 is a scenario for sensitivity analysis, not an observed volume.
+
+### Proposed workflow controls
+
+1. **Inputs:** request category, required fields, non-sensitive description, and a generated request reference.
+2. **Statuses:** Draft → Submitted → Needs Information / Under Review → Approved or Rejected by an authorized human → Closed. A system failure is recorded as Failed/Needs Recovery, not silently treated as approval.
+3. **Accountable owner:** a designated process owner monitors unresolved requests and escalations; the institution must confirm the actual role before implementation.
+4. **Approval boundary:** ordinary software can validate fields, detect duplicates, track status and enforce role checks. Only the authorized human decision-maker may make the substantive approval/rejection decision.
+5. **Audit record:** record the request reference, status changes, timestamps, action type and authorized role, while limiting access and retention appropriately. Avoid unnecessary personal or confidential data.
+6. **Fallback:** if storage, notification or another step fails, show a clear error, avoid claiming success, preserve or safely retry the request where possible, log the failure without exposing secrets, and route unresolved cases to the process owner. Do not create a duplicate during retry.
+
+### Five synthetic cases and recovery
+
+| Case | Expected result | Recovery and decision authority | Evidence limitation |
+|---|---|---|---|
+| Normal request | Required fields pass validation; request receives a reference and Submitted status | Authorized reviewer handles the request; requester can check status | Screenshot/user-confirmed prototype result; not proof of live college use |
+| Missing information | Validation identifies missing fields; request is not sent for approval | Requester supplies missing information and resubmits; reviewer decides only when complete | Synthetic prototype case |
+| Duplicate request | Existing matching request is flagged; no silent second processing | Show the existing reference and let the process owner resolve uncertain matches | Synthetic prototype case; real duplicate rate is unknown |
+| Unauthorized request | Role check denies an unauthenticated or unauthorized action and logs the denial | User signs in or contacts the authorized owner; no approval is granted by the test | Runtime authorization test passed; this does not establish institutional authorization policy |
+| Database/step failure | Clear failure state; no false success message and no approval inferred from a failed operation | Retry safely or escalate to the process owner; check persistence before retrying | Mocked database-failure test passed; a real production outage/recovery was not tested |
+
+### Ordinary software versus AI
+
+The core workflow does not require AI. Field validation, duplicate checks, role-based authorization, status tracking, audit logging and failure handling should use ordinary software and deterministic rules. AI could be considered later for optional plain-language explanations of non-confidential instructions, but only if an evidenced need exists. AI must not decide academic approvals, override access controls or receive confidential student information without explicit authorization and appropriate safeguards. Human reviewers remain responsible for decisions.
+
+### Risks, unknowns and design-abandonment criterion
+
+Key unknowns include the actual existing workflow, accountable roles, request volume, current handling time, rework rate, acceptable retention policy, user needs and whether a new system is warranted. Risks include unauthorized access, duplicate records, data loss, misleading status messages, excessive support work and unnecessary AI complexity.
+
+**Change/abandonment criterion:** after permission and approval, conduct a small pilot using synthetic or appropriately authorized data and compare representative requests using the same timing method. If the proposed process produces no positive net time saving after review, support, rework and maintenance—or increases serious errors or unauthorized actions—do not recommend adoption in its current form. Rework the design or retain the existing process until evidence supports a change.
+
+### Final evidence boundary
+
+Prototype test success supports only the behavior exercised by those tests. It does not prove real college adoption, actual request volume, measured time savings, or institutional approval. The report's time figures and volume scenarios are illustrative and must remain labelled as assumptions until permission-based evidence exists.
