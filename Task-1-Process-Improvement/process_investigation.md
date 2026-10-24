@@ -206,15 +206,11 @@ The proposed workflow must not be interpreted as a verified description
 of the current process at ICFAI.
 ### Independent Verification and Evidence Limitations
 
-The project submission and faculty review process was checked using four methods: student conversation, faculty or process-owner conversation, personal observation, and review of official college documentation.
+No completed student interview, faculty or process-owner interview, permission-based operational observation, or official-document verification is documented in this submission.
 
-The evidence log must identify the actual dates, participants, findings, and document references for these verification activities. Only details supported by the conversations, direct observations, or official documents should be described as verified facts.
+The current-process map is therefore a hypothetical walkthrough, not a verified description of ICFAI's actual process. The evidence log should distinguish prototype test results from assumptions and identify any future verification activities that are completed.
 
-The process map should distinguish confirmed steps and roles from any details that remain uncertain. Submission-volume figures and time-saving calculations remain hypothetical or estimated unless supported by actual counts and recorded timings.
-The investigation used student conversation, faculty or process-owner
-conversation, personal observation, and review of official college
-documentation. Specific findings and supporting evidence must be recorded
-in the evidence log. Any details not supported by evidence remain uncertain.
+Submission-volume figures and time-saving calculations remain estimates until actual counts and recorded timings are available.
 Therefore, the current-process description is a hypothetical walkthrough
 used to identify possible handoffs, missing information, duplicate
 submissions, authorization checks, and technical failures.
@@ -432,23 +428,14 @@ Because the current college process has not been independently verified, the act
 
 ## Independent Verification Status
 
-The project submission and faculty review process at ICFAI was checked using four verification methods:
+The actual project-submission and faculty-review process at ICFAI has not been independently verified for this investigation.
 
-1. **Student conversation:** A student conversation was conducted to understand the process from the student’s perspective.
-2. **Faculty or process-owner conversation:** A conversation was conducted with a faculty member or process owner to understand the review process and responsibilities.
-3. **Personal observation:** The process was personally observed to understand the steps, handoffs, and review activities.
-4. **Official college documentation:** Official college documentation was checked to support the understanding of the process.
+- Student interview documented: No
+- Faculty or process-owner interview documented: No
+- Permission-based operational observation documented: No
+- Official college process documentation independently verified: No
+- Independently verified operational requests: 0
 
-### Evidence and Limitations
+The evidence consists of the proposed workflow, prototype tests, synthetic test cases, and illustrative calculations. The hypothetical current-process time of 12 minutes per request and estimated net saving of 6 minutes per request are planning assumptions, not measured results.
 
-The four verification methods were completed. The evidence log should record the actual dates, number of participants, relevant findings, observed timings, and document titles or references for each method.
-
-Only details actually observed, discussed, or found in official documents should be reported as verified facts. Any information that could not be confirmed should be labelled as an assumption or an unknown.
-
-Time estimates used in the analysis must remain labelled as estimates unless they were measured directly. The estimated current-process time of 12 minutes per request and the proposed net saving of 6 minutes per request are not measured results unless supported by recorded timing evidence.
-
-No student personal information or confidential academic information should be included in the report.
-
-### Verification Summary
-
-The investigation uses student input, faculty or process-owner input, personal observation, and official documentation to examine the project submission and faculty review process. The final report should distinguish confirmed findings from estimates and assumptions so that the proposed improvements can be evaluated fairly.
+Before real deployment, the relevant process owner would need to confirm the current steps, responsibilities, request volume, handling time, rework rate, and approved fallback procedure. No student personal or confidential academic information should be included in the report.
