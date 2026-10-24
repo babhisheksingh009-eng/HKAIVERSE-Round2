@@ -28,11 +28,6 @@ a.metric("Course Entries", len(df))
 b.metric("Entries Pending Verification", int(needs_verification.sum()))
 c.metric("Listed-Course Credit Subtotal", f"{listed_credit_subtotal:g}")
 
-st.warning(
-    "The credit subtotal is based on listed entries only. "
-    "Course details and credits still require verification against the "
-    "official syllabus. This is NOT the official total degree credit."
-)
 
 # Filter
 st.subheader("Explore Curriculum")
