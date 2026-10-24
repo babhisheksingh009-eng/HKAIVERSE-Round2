@@ -280,3 +280,22 @@ The credit impact of proposed additions, reductions and updates should be recalc
 ### Limitation
 
 The exact curriculum for the 2023 admission batch could not be confirmed from the public pages reviewed. This limitation is disclosed rather than filling gaps with assumed courses or credits. The analysis is a student-led proposal and does not represent an official IFHE curriculum revision.
+
+## Dataset Count and Credit Calculation — Verified
+
+The current `data/curriculum.csv` contains 22 rows. Of these, 20 rows have numeric credit values, totaling 71 listed credits. The remaining two rows are provisional recommendations: reviewing overlapping introductory programming content and considering a practical API integration and deployment module. Their semester and credit fields are marked VERIFY and are excluded from the numeric total.
+
+For a provisional practical-update analysis, five selected course entries have the following listed credits:
+
+| Course | Listed credits |
+|---|---:|
+| Java Programming | 4 |
+| Python Programming | 3 |
+| Database Management Systems (DBMS) | 4 |
+| Software Engineering | 3 |
+| Cloud Computing | 4 |
+| **Total** | **18** |
+
+Calculation: 18 / 71 × 100 = 25.35%.
+
+**Interpretation and limitation:** The 25.35% figure represents the selected entries' share of the 71 numeric credits in this analysis dataset only. It is not a verified percentage of the complete B.Tech degree. The CSV is a proposed analysis dataset, not an official degree-credit statement. The exact applicability of the public IFHE course structure to the 2023 admission batch, and the complete official programme-credit denominator, still require confirmation.

@@ -166,3 +166,13 @@ Consider a practical API integration and deployment learning module. Check wheth
 
 ### Evidence and credit-balance condition
 These are proposals, not verified findings. Support decisions with the applicable official syllabus, dated job descriptions, and documented comparisons. Any reduction or addition must identify affected topics, prerequisites, assessment changes, and credit implications. Do not claim that the programme's credit total is balanced until the complete official curriculum and regulations have been checked.
+
+## Final Dataset-Based Credit Calculation
+
+The analysis dataset contains 22 CSV rows: 20 rows with numeric credit values and two provisional recommendations whose semester and credit values are marked VERIFY. The 20 numeric entries total 71 listed credits.
+
+The five entries selected for practical updates are Java Programming (4), Python Programming (3), Database Management Systems (4), Software Engineering (3), and Cloud Computing (4). Their listed credits total 18.
+
+Calculation: 18 / 71 × 100 = 25.35%.
+
+This is a **dataset-based coverage calculation**, not a verified percentage of the entire B.Tech degree and not a claim that 18 official degree credits are being added, removed, or changed. Practical improvements can occur within an existing course without changing its credit value. The complete official degree-credit total and the applicability of the published IFHE structure to the 2023 admission batch remain unconfirmed; therefore, this proposal does not claim that the official programme has been credit-balanced.
