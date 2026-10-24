@@ -333,3 +333,69 @@ The proposal should be reconsidered or abandoned if a permission-based investiga
 The design should also be revised if implementation and support costs outweigh measured benefits, or if appropriate access controls and auditable approval decisions cannot be maintained.
 
 The next verification step is to obtain permission from a suitable process owner and confirm the existing workflow, request volume, processing time, exceptions, and approval responsibilities before making claims about institutional benefits.
+## Existing Process and Roles Map — Hypothetical Walkthrough
+
+### 1. Investigation Status
+
+This section presents a hypothetical walkthrough of a student project-submission and faculty-review process. It is used to identify possible handoffs, delays and exceptions before designing the proposed SkillBridge AI workflow.
+
+The current process described below has not been independently verified at ICFAI. No faculty interview, permission-based operational observation or institutional record was available to confirm these steps. The roles and actions below are illustrative, not claims about actual ICFAI procedures.
+
+### 2. Hypothetical Current-State Steps
+
+| Step | Hypothetical action | Responsible role | Handoff or decision | Possible issue to investigate |
+|---|---|---|---|---|
+| 1 | A student prepares a project submission using the instructions provided for the assignment. | Student | Student prepares the submission for the designated submission channel. | The student may misunderstand required information or the deadline. |
+| 2 | The student submits the project through the designated channel. | Student | Submission is passed to the receiving person or system. | The student may not receive clear confirmation that the submission was received. |
+| 3 | The submission is received and checked for required information. | Hypothetical receiving coordinator or designated reviewer | Complete submissions proceed; incomplete submissions may require clarification. | Missing information may cause additional messages and repeated work. |
+| 4 | The submission is assigned or forwarded to the appropriate faculty reviewer. | Hypothetical coordinator or designated owner | The submission is handed to the authorized reviewer. | The responsible reviewer or current status may not be obvious to the student. |
+| 5 | The reviewer evaluates the submission against the applicable criteria. | Authorized faculty reviewer | The reviewer decides whether to approve it, reject it or request changes, according to applicable rules. | Review may be delayed if information is missing or the submission reaches the wrong reviewer. |
+| 6 | If changes are required, feedback is sent to the student. | Authorized faculty reviewer | The student receives feedback and prepares a revised submission. | Feedback and revised versions may be difficult to track if there is no consistent record. |
+| 7 | The student resubmits, where permitted, and the submission is reviewed again. | Student and authorized faculty reviewer | The revised submission returns to the review stage. | Repeated corrections may increase the total handling time. |
+| 8 | The outcome is communicated and the submission record is retained. | Hypothetical designated process owner or authorized reviewer | The student receives the outcome; the responsible owner retains any required record. | The student may need to ask for an update if the outcome or status is unclear. |
+
+### 3. Roles and Responsibilities
+
+- **Student:** Supplies the required information, submits the project and responds to requests for corrections.
+- **Receiving coordinator or designated owner:** Hypothetically receives submissions, checks completeness and routes them to the appropriate reviewer. The existence of this role in the actual process must be verified.
+- **Authorized faculty reviewer:** Evaluates the submission and makes academic decisions within their authority.
+- **Process owner or administrator:** Hypothetically maintains the process record and handles routing or status questions where applicable. This role has not been confirmed at ICFAI.
+
+The proposed system must not grant itself academic decision-making authority. Approval, rejection and academic exceptions must remain with the authorized human decision-maker.
+
+### 4. Handoffs, Approvals and Exceptions
+
+**Handoffs:** Student to receiving channel; receiving channel to designated reviewer; reviewer to student when corrections are needed; and reviewer or designated owner to the final outcome record.
+
+**Approval boundary:** Only the appropriately authorized human reviewer may make the academic decision. Automated checks may identify missing fields, likely duplicates or unauthorized access, but they must not independently approve academic work.
+
+**Hypothetical exceptions to investigate:**
+
+1. A submission is missing required information.
+2. A student submits the same project more than once.
+3. A submission reaches the wrong reviewer or an unauthorized person attempts to access it.
+4. A student resubmits after receiving feedback.
+5. A submission is delayed, lost or cannot be accessed because of a technical failure.
+6. The student disputes the outcome or requests clarification.
+
+These are possible scenarios for investigation and testing, not confirmed incidents at ICFAI.
+
+### 5. Evidence Needed to Verify the Current Process
+
+If permission becomes available, the following questions should be asked of a willing process user or owner:
+
+- Which channel is used to submit a project?
+- Who receives and checks the submission?
+- How is the authorized reviewer identified?
+- What information is required before review begins?
+- How are missing information, duplicates and resubmissions handled?
+- Who makes the final decision?
+- How is the student informed of the status and outcome?
+- What happens if a submission or communication fails?
+- How much time does each stage normally take, and how often does rework occur?
+
+Only permitted, non-identifying information should be recorded. If access is unavailable or declined, the hypothetical designation must remain in the final report.
+
+### 6. Current-State Conclusion
+
+This hypothetical map provides a structured baseline for testing the proposed workflow. It does not establish that the described process, roles, delays or rework occur at ICFAI. Those claims require permission-based observation or confirmation from an appropriate process user or owner. Any time-saving estimate must therefore remain illustrative until actual process data can be collected.
