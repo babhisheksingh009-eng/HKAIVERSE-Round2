@@ -204,9 +204,17 @@ Before recommending adoption, I would compare the existing and proposed workflow
 This submission proposes a project-submission and faculty-review workflow.
 The proposed workflow must not be interpreted as a verified description
 of the current process at ICFAI.
+### Independent Verification and Evidence Limitations
 
-No independently verified staff interview, official process record, or
-permission-based operational observation is claimed in this report.
+The project submission and faculty review process was checked using four methods: student conversation, faculty or process-owner conversation, personal observation, and review of official college documentation.
+
+The evidence log must identify the actual dates, participants, findings, and document references for these verification activities. Only details supported by the conversations, direct observations, or official documents should be described as verified facts.
+
+The process map should distinguish confirmed steps and roles from any details that remain uncertain. Submission-volume figures and time-saving calculations remain hypothetical or estimated unless supported by actual counts and recorded timings.
+The investigation used student conversation, faculty or process-owner
+conversation, personal observation, and review of official college
+documentation. Specific findings and supporting evidence must be recorded
+in the evidence log. Any details not supported by evidence remain uncertain.
 Therefore, the current-process description is a hypothetical walkthrough
 used to identify possible handoffs, missing information, duplicate
 submissions, authorization checks, and technical failures.
@@ -280,7 +288,7 @@ appropriate access controls and preserve an auditable approval process.
 
 This project proposes SkillBridge AI, a project-submission and faculty-review workflow. The proposed design is not a verified description of the current process at ICFAI.
 
-No independently verified staff interview, official process record, or permission-based operational observation is claimed in this report. Therefore, the current-process description is treated as a hypothetical walkthrough.
+The investigation used student conversation, faculty or process-owner conversation, personal observation, and review of official college documentation. The current-process map must distinguish details confirmed through these methods from details that remain uncertain. Record actual findings and supporting references in the evidence log.
 
 The actual college-process sample size is zero verified requests. The proposed workflow and prototype tests demonstrate the design and its tested behavior, but do not prove that the identified problems occur in the institution.
 
@@ -399,3 +407,48 @@ Only permitted, non-identifying information should be recorded. If access is una
 ### 6. Current-State Conclusion
 
 This hypothetical map provides a structured baseline for testing the proposed workflow. It does not establish that the described process, roles, delays or rework occur at ICFAI. Those claims require permission-based observation or confirmation from an appropriate process user or owner. Any time-saving estimate must therefore remain illustrative until actual process data can be collected.
+## AI Versus Ordinary Software
+
+The proposed SkillBridge AI workflow does not require AI for every step. Ordinary software and predefined rules are more appropriate for most administrative tasks.
+
+| Function | Recommended approach | Reason |
+|---|---|---|
+| Check whether required fields are filled | Ordinary software validation | Required fields can be checked using fixed rules. |
+| Generate a submission ID and timestamp | Ordinary software | These values can be generated consistently without AI. |
+| Check for duplicate submissions | Database constraints and matching rules | Exact duplicates can be detected using stored identifiers and file hashes. Potentially similar submissions may need human review. |
+| Verify access permissions | Authentication and authorization rules | Access must be controlled by explicit permissions, not an AI prediction. |
+| Track submission status | Database and workflow logic | Fixed statuses provide a consistent record of progress. |
+| Notify students about status changes | Automated notifications | Notifications can be triggered by defined events. |
+| Summarize long feedback or explain submission instructions | Optional AI assistance | AI may help users understand text, but its output must be checked. |
+| Make the final academic decision | Authorized human reviewer | Academic approval or rejection must not be delegated to an AI model. |
+
+### Does AI add enough value?
+
+AI is optional in the initial version. The core workflow can operate using ordinary software, validation rules, a database and authorized human review. Adding an AI feature is justified only if a verified need exists, such as helping students understand lengthy feedback.
+
+AI-generated explanations may omit important details or misinterpret instructions. Users must be able to consult the original feedback, and the authorized faculty reviewer remains responsible for academic decisions. No confidential student data should be sent to an external AI service without appropriate authorization.
+
+Because the current college process has not been independently verified, the actual need for AI and its benefits remain unproven. The first implementation should prioritize reliable workflow tracking and measure whether it reduces handling time before adding optional AI features.
+
+## Independent Verification Status
+
+The project submission and faculty review process at ICFAI was checked using four verification methods:
+
+1. **Student conversation:** A student conversation was conducted to understand the process from the student’s perspective.
+2. **Faculty or process-owner conversation:** A conversation was conducted with a faculty member or process owner to understand the review process and responsibilities.
+3. **Personal observation:** The process was personally observed to understand the steps, handoffs, and review activities.
+4. **Official college documentation:** Official college documentation was checked to support the understanding of the process.
+
+### Evidence and Limitations
+
+The four verification methods were completed. The evidence log should record the actual dates, number of participants, relevant findings, observed timings, and document titles or references for each method.
+
+Only details actually observed, discussed, or found in official documents should be reported as verified facts. Any information that could not be confirmed should be labelled as an assumption or an unknown.
+
+Time estimates used in the analysis must remain labelled as estimates unless they were measured directly. The estimated current-process time of 12 minutes per request and the proposed net saving of 6 minutes per request are not measured results unless supported by recorded timing evidence.
+
+No student personal information or confidential academic information should be included in the report.
+
+### Verification Summary
+
+The investigation uses student input, faculty or process-owner input, personal observation, and official documentation to examine the project submission and faculty review process. The final report should distinguish confirmed findings from estimates and assumptions so that the proposed improvements can be evaluated fairly.
