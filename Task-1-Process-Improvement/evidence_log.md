@@ -13,7 +13,7 @@ This evidence log documents observations, potential workflow problems, design de
 - **Process investigated:** Academic project submission and review
 - **Source:** Personal experience as a student
 - **People involved:** Students and faculty members
-- **Evidence classification:** Personal observation
+- **Evidence classification:** Personal experience / unverified hypothesis
 
 **Observation:**
 
