@@ -206,3 +206,43 @@ A real deployment would require institutional approval, secure authentication, a
 SkillBridge AI proposes a structured approach to academic project submission and review through submission registration, input validation, status tracking, faculty feedback, role-based authorization, and exception handling.
 
 The prototype provides a basis for evaluating the proposed workflow. Further investigation, documented evidence, end-to-end testing, and measured comparisons are necessary before claiming institution-wide benefits or quantified time savings.
+## Proposed Workflow Diagram
+
+The following diagram describes the proposed workflow. It is a design proposal, not a verified description of ICFAI's existing process.
+
+```mermaid
+flowchart TD
+    A["Student prepares project submission"] --> B["Enter project details and upload files"]
+    B --> C{"Required information complete?"}
+    C -- "No" --> D["Show missing information"]
+    D --> B
+    C -- "Yes" --> E{"Possible duplicate?"}
+    E -- "Yes" --> F["Flag duplicate for review"]
+    F --> G["Authorized reviewer decides next step"]
+    E -- "No" --> H["Create submission reference"]
+    H --> I["Set status: Submitted"]
+    I --> J["Authorized faculty reviews submission"]
+    J --> K{"Decision"}
+    K -- "Needs changes" --> L["Return feedback to student"]
+    L --> M["Student revises and resubmits"]
+    M --> B
+    K -- "Approved" --> N["Record approval and reviewer action"]
+    K -- "Rejected" --> O["Record decision and feedback"]
+    N --> P["Show final status to student"]
+    O --> P
+    G --> Q["Record duplicate-review outcome"]
+    Q --> P
+    I --> R{"System or database failure?"}
+    R -- "Yes" --> S["Record failure and use approved fallback"]
+    S --> T["Authorized owner follows up and reconciles records"]
+```
+
+### Workflow controls
+
+- **Inputs:** Project title, description, required files and student authentication.
+- **Statuses:** Draft, Submitted, Under Review, Needs Changes, Approved, Rejected and Exception.
+- **Accountable owner:** The authorized faculty reviewer owns the review decision. The designated system administrator handles technical failures if such a role is approved.
+- **Approval boundary:** The system can validate fields and flag possible duplicates, but it cannot make the official academic approval decision.
+- **Audit record:** Record the submission reference, timestamps, status changes and authorized reviewer actions. Use only approved access controls and retain records according to institutional policy.
+- **Fallback:** If the system fails, follow the institution's existing approved submission process. Reconcile records after recovery to prevent lost or duplicated submissions.
+- **AI value:** AI is optional. Ordinary form validation, duplicate checks and status tracking can be handled by standard software. AI should be considered only if a specific, verified need—such as summarizing lengthy feedback—justifies its cost and risks.

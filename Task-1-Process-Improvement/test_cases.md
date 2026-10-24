@@ -1,16 +1,19 @@
 # SkillBridge AI
 ## Task 1: Workflow Testing
 
-### Objective
-Test the proposed project submission and review workflow using five scenarios. Testing is performed using synthetic project data and test accounts in the prototype.
+### 1. Objective
+
+Evaluate the proposed project submission and review workflow using five scenarios and synthetic project data. The scenarios cover normal submission, missing information, duplicate submissions, unauthorized access, and database connection failure.
+
+The tests were conducted against the local prototype and supporting test scripts. The results distinguish user-confirmed behavior, executed tests, and behavior that remains unverified.
 
 ---
 
-### Test Case 1: Normal Submission
+### 2. Test Case 1: Normal Submission
 
 **Scenario:** A student submits a project with all required information.
 
-**Input:** Valid project title, subject, description, and report or repository link.
+**Input:** A valid project title, subject, description, and report or repository link.
 
 **Expected Result:**
 - The submission is saved successfully.
@@ -22,13 +25,15 @@ Test the proposed project submission and review workflow using five scenarios. T
 
 **Status:** PASS — based on user testing and confirmation.
 
-**Evidence available:** User confirmation that normal submission works. Screenshot retained at `evidence/test1_normal_submission.png`; no database-query evidence was retained.
+**Evidence available:** Screenshot retained at `evidence/test1_normal_submission.png`. No database-query evidence was retained.
 
-**Recovery:** If saving fails, display an error and allow the student to retry safely.
+**Recovery:** If saving fails, display an error and allow the student to retry safely. Before retrying, check whether the original submission was saved to avoid creating a duplicate.
+
+**Remaining limitation:** The complete submission and reviewer-access flow has not been independently verified end to end.
 
 ---
 
-### Test Case 2: Missing Information
+### 3. Test Case 2: Missing Information
 
 **Scenario:** A student submits a project without a required field.
 
@@ -36,20 +41,22 @@ Test the proposed project submission and review workflow using five scenarios. T
 
 **Expected Result:**
 - The system identifies the missing field.
-- The submission is not accepted as complete.
+- The incomplete submission is not accepted as complete.
 - The student receives a clear validation message.
 
 **Actual Result:** The user confirmed that required-field validation works.
 
 **Status:** PASS — based on user testing and confirmation.
 
-**Evidence available:** User confirmation that required-field validation works. Screenshot retained at `evidence/test2_missing_information.png`; no database-query evidence was retained.
+**Evidence available:** Screenshot retained at `evidence/test2_missing_information.png`. No database-query evidence was retained.
 
-**Recovery:** The student completes the missing information and resubmits.
+**Recovery:** The student completes the missing information and submits the project again.
+
+**Remaining limitation:** The screenshot and user confirmation do not independently establish every aspect of the application's validation behavior.
 
 ---
 
-### Test Case 3: Duplicate Submission
+### 4. Test Case 3: Duplicate Submission
 
 **Scenario:** A student attempts to submit the same project twice.
 
@@ -64,27 +71,29 @@ Test the proposed project submission and review workflow using five scenarios. T
 
 **Status:** PASS — based on user testing and confirmation.
 
-**Evidence available:** User confirmation that duplicate detection works. Screenshot retained at `evidence/test3_duplicate_submission.png`; no database-query evidence was retained.
+**Evidence available:** Screenshot retained at `evidence/test3_duplicate_submission.png`. No database-query evidence was retained.
 
-**Recovery:** The student can open the existing submission or explicitly confirm a legitimate new submission, if supported by the application.
+**Recovery:** The student can open the existing submission or follow an explicitly supported process for submitting a legitimate new version.
+
+**Remaining limitation:** The database records were not independently inspected to verify duplicate prevention.
 
 ---
 
-### Test Case 4: Unauthorized Request
+### 5. Test Case 4: Unauthorized Request
 
 **Scenario:** A student attempts to access a faculty-only review function.
 
 **Input:** Simulated student, faculty, and unauthenticated user sessions.
 
 **Expected Result:**
-- The system denies unauthorized actions.
+- Unauthorized actions are denied.
 - Faculty users are allowed to continue.
-- Unauthorized users cannot pass the faculty-role check.
+- Unauthenticated users are denied access to the restricted action.
 
-**Actual Result:**
-The runtime authorization test executed the actual `require_role()` function from `app.py` using simulated session states.
+**Actual Result:** The runtime authorization test executed the `require_role()` function from `app.py` using simulated session states.
 
-All three test cases passed:
+The following checks passed:
+
 1. A student was rejected from faculty-only actions.
 2. A faculty user was allowed to continue.
 3. An unauthenticated user was rejected.
@@ -93,13 +102,13 @@ All three test cases passed:
 
 **Evidence:** Terminal output from `python test_authorization_runtime.py`.
 
-**Limitation:** The test uses simulated session states. The complete login flow, browser-level behavior, and actual database review operation have not been tested end to end.
+**Recovery:** The user returns to the permitted dashboard. An authorized reviewer performs review actions through the application's permitted workflow.
 
-**Recovery:** The user can return to the student dashboard. An authorized reviewer can perform the review action through the application's permitted workflow.
+**Remaining limitation:** The test uses simulated session states. The complete login flow, browser-level behavior, and actual database review operation have not been tested end to end.
 
 ---
 
-### Test Case 5: Database Connection Failure
+### 6. Test Case 5: Database Connection Failure
 
 **Scenario:** The application encounters a database connection error.
 
@@ -108,58 +117,71 @@ All three test cases passed:
 **Expected Result:**
 - The simulated database connection error is detected.
 - The test reports that the simulated failure was handled.
+- The test does not treat a failed connection as proof that a submission was saved.
 
-**Actual Result:** Running `python test_database_failure.py` produced:
+**Actual Result:** Running `python test_database_failure.py` produced the following output:
+
 - `TEST PASSED: Database connection failure was detected.`
 - `TEST PASSED: The simulated failure was handled.`
 
-**Status:** PASS — simulated database error detection test executed successfully.
+**Status:** PASS — the simulated database error detection test executed successfully.
 
-**Evidence:** The terminal output from `python test_database_failure.py`.
+**Evidence:** Terminal output from `python test_database_failure.py`.
 
-**Limitation:** This standalone test uses a mock error. It does not independently verify the application's behavior during a real database outage, nor does it test every possible database or transaction failure.
+**Recovery:** Check the database service and configuration, restore connectivity, and verify whether the original operation succeeded before retrying it.
 
-**Recovery:** Check the database service and configuration, restore connectivity, and retry the operation safely.
+**Remaining limitation:** This standalone test uses a mock error. It does not independently verify application behavior during a real database outage, transaction failure, or data-recovery operation.
+
 ---
-### Decision Responsibility and Recovery Matrix
 
-| Scenario | System response | Responsible person | Recovery or next step |
+### 7. Decision Responsibility and Recovery Matrix
+
+| Scenario | Expected system response | Responsible person or role | Recovery or next step |
 |---|---|---|---|
-| Normal submission | Validate required fields, save the submission and assign a reference number. | Student submits; authorized faculty member reviews. | If saving fails, display an error. Retry only after checking whether the original submission was saved. |
-| Missing information | Reject the incomplete submission and identify the missing field. | Student corrects the information. | Complete the required field and submit again. |
-| Duplicate submission | Flag a possible duplicate and avoid creating an unintended second record. | Student explains whether a new submission is intentional; authorized faculty member resolves ambiguity if required by policy. | Open the existing record or proceed through an explicitly supported new-submission process. |
-| Unauthorized request | Deny the restricted action and avoid changing the review record. | The application enforces permissions; an authorized administrator investigates repeated access problems if necessary. | Return to the permitted dashboard or request access through the approved process. |
-| Database connection failure | Show a clear failure message and do not report the save as successful. | System administrator or designated technical support restores service; the student retries after checking submission status. | Restore connectivity, verify whether the original operation succeeded, and retry safely. |
+| Normal submission | Validate required fields, save the submission, and assign a reference number. | Student submits; authorized faculty member reviews. | If saving fails, display an error. Check whether the original submission was saved before retrying. |
+| Missing information | Identify missing fields and prevent incomplete submission. | Student corrects the information. | Complete the required fields and submit again. |
+| Duplicate submission | Flag a possible duplicate and prevent an unintended second record. | Student clarifies whether the new submission is intentional; an authorized reviewer resolves ambiguity if required by policy. | Open the existing record or follow an explicitly supported new-submission process. |
+| Unauthorized request | Deny the restricted action without changing the review record. | The application enforces permissions; an authorized administrator investigates repeated access problems if necessary. | Return to the permitted dashboard or request access through an approved process. |
+| Database connection failure | Detect the failure and avoid reporting an unsuccessful save as successful. | Designated technical support restores service; the student checks submission status before retrying. | Restore connectivity, verify the original operation's outcome, and retry safely. |
 
 **Approval boundary:** Students may submit and correct their own project information. Only authorized faculty members may perform faculty-only review actions. Technical support may restore service but must not make academic review decisions.
 
-**Audit record:** Where implemented, record the submission reference, timestamp, action, actor's authorized role, previous and new status, and success or failure outcome. Do not record passwords, authentication tokens, or unnecessary personal information.
+**Audit record:** Where implemented, record the submission reference, timestamp, action, authorized actor role, previous and new status, and success or failure outcome. Do not record passwords, authentication tokens, or unnecessary personal information.
 
-**Fallback:** If the application is unavailable, students should follow the institution's existing approved submission procedure. This fallback is a proposal and must not be represented as an existing official policy without verification.
+**Fallback:** If the application is unavailable, students should follow the institution's existing approved submission procedure. This is a proposed fallback and must not be represented as an existing official policy without verification.
 
-**Testing limitation:** The matrix specifies intended behavior. Each behavior must be tested before it can be claimed as implemented. In particular, safe retry, audit-record creation, and real database-outage recovery have not been independently demonstrated by the tests described above.
-## Testing Record Summary
+**Testing limitation:** The matrix describes intended behavior. Each behavior must be tested before it can be claimed as implemented. Safe retry, audit-record creation, and recovery from a real database outage have not been independently demonstrated by the tests described here.
+
+---
+
+### 8. Testing Record Summary
 
 | Test | Scenario | Result | Evidence |
 |---|---|---|---|
-| 1 | Normal submission | PASS — user-confirmed | Screenshot: `evidence/test1_normal_submission.png`; no database-query evidence |
-| 2 | Missing information | PASS — user-confirmed | Screenshot: `evidence/test2_missing_information.png`; no database-query evidence |
-| 3 | Duplicate submission | PASS — user-confirmed | Screenshot: `evidence/test3_duplicate_submission.png`; no database-query evidence |
-| 4 | Unauthorized request | PASS — authorization-function test | Runtime test output |
-| 5 | Database connection failure | PASS — connection-failure handling | Application or terminal error output |
+| 1 | Normal submission | PASS — user-confirmed | `evidence/test1_normal_submission.png`; no database-query evidence |
+| 2 | Missing information | PASS — user-confirmed | `evidence/test2_missing_information.png`; no database-query evidence |
+| 3 | Duplicate submission | PASS — user-confirmed | `evidence/test3_duplicate_submission.png`; no database-query evidence |
+| 4 | Unauthorized request | PASS — authorization-function test | Terminal output from `python test_authorization_runtime.py` |
+| 5 | Database connection failure | PASS — mocked connection-failure test | Terminal output from `python test_database_failure.py`; real outage recovery not verified |
 
-### Test Environment
+### 9. Test Environment
+
 - **Project:** SkillBridge AI
 - **Environment:** Local prototype
-- **Data:** Synthetic project data and test accounts
+- **Data:** Synthetic project data and simulated test sessions
 - **Testing period:** October 2026
+- **Testing scope:** User-confirmed submission behavior, authorization-function checks, and mocked database connection-failure handling
 
-### Overall Testing Summary
+### 10. Overall Testing Summary
 
-The five required scenarios have been reported as working or have supporting test results. The normal submission, missing-information, and duplicate-submission results are based on user confirmation. The authorization-function test and database connection-failure test have been executed and have supporting results.
+All five required scenarios are documented.
 
-The complete login flow and actual database review operation remain unverified end to end. The database failure test covers a connection failure, not every possible database error. Screenshots for the first three scenarios and logs for the authorization, simulated database-failure, and direct database-connection tests are retained in the repository.
+Tests 1–3 are marked PASS based on user testing and confirmation, with screenshots retained in the repository. Test 4 has runtime authorization-function test output, and Test 5 has output from a mocked database connection-failure test.
 
-### Evidence and Integrity Note
+These results do not establish that the complete application has passed end-to-end testing. The complete login flow, database review operation, audit-record creation, safe retry behavior, and recovery from a real database outage remain unverified.
 
-A test should be marked as fully evidenced only when its corresponding screenshot, log, or database result has been saved. User confirmation and executed test output should be distinguished from independently retained evidence.
+### 11. Evidence and Integrity Note
+
+A test should be described as independently evidenced only when its corresponding screenshot, log, or database result has been retained and can be inspected. User confirmation, executed test output, and proposed but untested behavior must remain clearly distinguished.
+
+The test results describe the local prototype and its supporting test scripts. They do not establish that SkillBridge AI has been deployed or approved by ICFAI, or that the proposed workflow has improved the institution's actual process.
