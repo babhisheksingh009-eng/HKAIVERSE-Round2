@@ -278,65 +278,6 @@ exception handling.
 It should also be revised if implementation and support costs outweigh
 the measured benefits, or if the proposed system cannot enforce
 appropriate access controls and preserve an auditable approval process.
-## Final Evidence and Feasibility Assessment
-
-### 1. Existing-Process Investigation
-
-This project proposes SkillBridge AI, a project-submission and faculty-review workflow. The proposed design is not a verified description of the current process at ICFAI.
-
-The investigation used student conversation, faculty or process-owner conversation, personal observation, and review of official college documentation. The current-process map must distinguish details confirmed through these methods from details that remain uncertain. Record actual findings and supporting references in the evidence log.
-
-The actual college-process sample size is zero verified requests. The proposed workflow and prototype tests demonstrate the design and its tested behavior, but do not prove that the identified problems occur in the institution.
-
-Before implementation, a suitable process owner would need to confirm the current workflow, responsibilities, request volume, handling time, rework rate, and approved fallback procedure.
-
-### 2. Permission and Privacy
-
-Any future observation or interview must be voluntary and permission-based. If permission is unavailable, the investigation will remain hypothetical.
-
-No confidential college records are required for this proposal. Testing should use synthetic records, and published evidence must not contain personal identifiers, credentials, private messages, or confidential college information.
-
-### 3. Illustrative Time-Saving Calculation
-
-The following values are planning assumptions, not measured college data.
-
-| Activity | Illustrative time per request |
-|---|---:|
-| Existing process, including status checking and follow-up | 12 minutes |
-| Proposed submission | 3 minutes |
-| Proposed status check | 1 minute |
-| Additional review and support | 2 minutes |
-| Total proposed time | 6 minutes |
-
-Illustrative net time saved per request:
-
-12 - (3 + 1 + 2) = 6 minutes.
-
-| Requests per month | Illustrative monthly time saved |
-|---:|---:|
-| 10 | 60 minutes |
-| 40 | 240 minutes |
-| 100 | 600 minutes |
-
-These calculations illustrate possible benefits; they do not establish actual demand or savings at ICFAI.
-
-### 4. Implementation Effort and Break-Even
-
-Implementation effort has not been measured. For planning purposes only, assume that implementation requires six hours, equivalent to 360 minutes.
-
-At the illustrative saving of six minutes per request:
-
-Break-even requests = 360 / 6 = 60 requests.
-
-This is a hypothetical break-even calculation, not a measured return on investment. Actual feasibility depends on implementation effort, maintenance, training, request volume, and verified time savings.
-
-### 5. Risks and Conditions for Changing the Design
-
-The proposal should be reconsidered or abandoned if a permission-based investigation finds that the existing process already provides reliable tracking, timely reviews, acceptable workload, and effective exception handling.
-
-The design should also be revised if implementation and support costs outweigh measured benefits, or if appropriate access controls and auditable approval decisions cannot be maintained.
-
-The next verification step is to obtain permission from a suitable process owner and confirm the existing workflow, request volume, processing time, exceptions, and approval responsibilities before making claims about institutional benefits.
 ## Existing Process and Roles Map — Hypothetical Walkthrough
 
 ### 1. Investigation Status
