@@ -274,3 +274,32 @@ The screenshots supplement the previously recorded user-confirmed results. No da
 
 The time-saving and break-even figures are planning assumptions.
 They must not be reported as measured institutional results.
+## Final Evidence-Status Clarification — 24 October 2026
+
+### Investigation Status
+
+- Actual college process independently verified: No.
+- Permission-based operational observation documented: No.
+- Faculty or process-owner interview documented: No.
+- Actual operational sample size: Zero independently verified requests.
+- Evidence available: Proposed workflow diagram, documented prototype tests, synthetic test cases, and illustrative time calculations.
+
+### Evidence Limitations
+
+The prototype tests demonstrate the behavior of the tested features under the documented conditions. They do not establish that the existing college process has the identified problems or that the proposed workflow would produce the estimated savings in actual operations.
+
+The existing-process description is a hypothetical walkthrough. No unverified observation, interview, request count, or processing time is presented as a measured fact.
+
+### Next Verification Step
+
+If permission becomes available, request a voluntary discussion or walkthrough with an appropriate process owner. Confirm the current steps, responsibilities, request volume, handling time, exceptions, and approval procedures. Record only permitted, non-identifying information.
+
+If access is unavailable or declined, retain the hypothetical designation and state this limitation in the final report.
+
+### Privacy and Safety
+
+Use synthetic data for demonstrations and tests. Do not collect or publish student identifiers, staff names, marks, fees, signatures, credentials, private messages, or confidential college records.
+
+### Time-Saving Estimates
+
+The proposed six-minute saving per request and the monthly scenarios are illustrative calculations, not measured institutional results. Implementation effort, maintenance costs, request volume, and actual time savings remain unverified.
