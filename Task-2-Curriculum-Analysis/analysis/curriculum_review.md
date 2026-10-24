@@ -240,3 +240,43 @@ The project is a student proposal and does not constitute an approved change to 
 The proposed review aims to preserve core computer-science knowledge while strengthening practical software development, testing, databases, cloud deployment, data analysis, and AI learning.
 
 Final recommendations should be based on the applicable official syllabus, traceable job advertisements, documented exercise verification, balanced credit calculations, and transparent limitations. Until the correct admission-batch curriculum is confirmed, course mappings and credit-change percentages remain provisional.
+
+## Official Curriculum Baseline and Verification
+
+**Institution:** The ICFAI Foundation for Higher Education, Hyderabad  
+**School:** ICFAITech  
+**Degree:** B.Tech  
+**Branch:** Computer Science and Engineering  
+**Admission batch under review:** 2023  
+**Expected graduation:** 2027  
+
+### Official sources checked
+
+1. [ICFAITech B.Tech programme structure](https://www.ifheindia.org/icfai-tech-school-hyderabad/icfaitech-btech-program-structure)
+2. [IFHE syllabus listing for ICFAITech](https://naac2020.ifheindia.org/1.1.3Syllabus%20IcfaiTech.html)
+
+### Verification result
+
+The publicly available programme structure provides a reference for reviewing CSE course coverage, course titles, semester placements and credits. However, the public pages reviewed do not establish that the displayed structure is the exact curriculum applicable to the 2023 admission batch.
+
+Therefore, this report distinguishes the publicly available reference curriculum from the student's confirmed batch-specific curriculum.
+
+The following details remain unverified:
+
+1. The complete semester-wise course structure applicable to the 2023 admission batch.
+2. The official total degree-credit requirement for that batch.
+3. The exact elective options and the electives selected by the student.
+4. The applicable credit-counting rules for internships, thesis, summer terms and non-credit courses.
+5. Whether the curriculum or regulations changed for the 2023 cohort.
+
+### How this affects the proposed redesign
+
+The public curriculum may be used for a preliminary comparison of subject coverage. However, the proposed curriculum must remain separate from the official reference data.
+
+Until the applicable batch-specific regulations are confirmed, this analysis does not claim a verified official degree-credit total or an exact percentage of degree credits changed.
+
+The credit impact of proposed additions, reductions and updates should be recalculated against the verified batch-specific baseline when it becomes available.
+
+### Limitation
+
+The exact curriculum for the 2023 admission batch could not be confirmed from the public pages reviewed. This limitation is disclosed rather than filling gaps with assumed courses or credits. The analysis is a student-led proposal and does not represent an official IFHE curriculum revision.
