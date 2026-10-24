@@ -134,8 +134,8 @@ The following five courses are proposed for substantial practical updates:
 | Java Programming | 4 | Application development, testing, and Git |
 | Python Programming | 3 | API integration and data processing |
 | Database Management Systems | 4 | Database-backed application projects |
-| Software Engineering | 4 | Testing, code review, and CI/CD concepts |
-| Cloud Computing | 3 | Deployment and monitoring |
+| Software Engineering | 3 (public reference; 2023-batch applicability unconfirmed) | Testing, code review, and CI/CD concepts |
+| Cloud Computing | 4 (public reference; 2023-batch applicability unconfirmed) | Deployment and monitoring |
 
 Total credits associated with these proposed updates: 18.
 
