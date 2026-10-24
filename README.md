@@ -67,10 +67,10 @@ Environment files, credentials, local databases, virtual environments, and other
 
 ## Submission Details
 
-- **GitHub repository:** Add the final repository URL after publishing.
+- **GitHub repository:** https://github.com/babhisheksingh009-eng/HKAIVERSE-Round2
 - **Release:** Add the release URL after creating a release.
-- **Final commit:** Add the commit URL after the final commit.
+- **Project commit:** https://github.com/babhisheksingh009-eng/HKAIVERSE-Round2/commit/ea583561d7bc25b5efb491c8c8402f06167fb94a
 
 ## Personal Contribution
 
-Describe only the analysis, implementation, testing, documentation, and verification work personally completed for these projects.
+My contribution includes preparing project documentation, developing and testing project components, analyzing the proposed workflow and curriculum, and recording verification results and limitations. The task-specific reports identify assumptions and areas that still require independent verification.
