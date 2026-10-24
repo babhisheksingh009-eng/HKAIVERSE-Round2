@@ -256,3 +256,21 @@ Three screenshots were added to the repository under `evidence/`:
 The screenshots supplement the previously recorded user-confirmed results. No database-query evidence was retained for these three scenarios, so the screenshots should not be treated as independent proof of database contents or complete end-to-end behavior. Authorization and simulated database-failure results remain documented in their respective test logs; a separate direct MySQL connection test also succeeded.
 
 **Remaining limitations:** The complete application login and review workflow has not been independently verified end to end. Time savings and process-volume figures remain illustrative estimates, not measured college-wide results.
+## Final evidence-status clarification — 24 October 2026
+
+- Actual college process independently verified: No.
+- Permission-based operational observation claimed: No.
+- Faculty or process-owner interview claimed: No.
+- Actual operational sample size: Zero verified requests.
+- Evidence available: Proposed workflow, documented prototype tests,
+  synthetic test cases, and explicitly illustrative time calculations.
+- Limitation: Prototype tests do not establish that the existing
+  college process has the identified problems.
+- Next verification step: Obtain permission from a suitable process
+  owner and confirm the current workflow, request volume, handling
+  time, exceptions, and approval responsibilities.
+- Privacy boundary: Do not collect or publish personal identifiers,
+  credentials, private messages, or confidential college records.
+
+The time-saving and break-even figures are planning assumptions.
+They must not be reported as measured institutional results.

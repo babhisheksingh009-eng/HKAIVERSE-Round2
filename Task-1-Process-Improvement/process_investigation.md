@@ -197,3 +197,80 @@ I would also reconsider the design if measured trials showed that operating the 
 Before recommending adoption, I would compare the existing and proposed workflows using the same representative synthetic cases and record the time, errors, recovery effort, and user feedback. Any recommendation would remain conditional on institutional approval, appropriate security controls, and evidence of a genuine improvement.
 
 **Current position:** These are decision criteria for future evaluation, not findings from a completed field study.
+## Final Evidence and Feasibility Assessment
+
+### Existing-process investigation
+
+This submission proposes a project-submission and faculty-review workflow.
+The proposed workflow must not be interpreted as a verified description
+of the current process at ICFAI.
+
+No independently verified staff interview, official process record, or
+permission-based operational observation is claimed in this report.
+Therefore, the current-process description is a hypothetical walkthrough
+used to identify possible handoffs, missing information, duplicate
+submissions, authorization checks, and technical failures.
+
+The evidence sample for actual college operations is zero. The proposed
+workflow and test cases are design and prototype evidence, not proof
+that the same problems occur in the institution.
+
+Before any real deployment, the process owner would need to confirm
+the existing steps, responsibilities, request volume, actual handling
+time, rework rate, and approved fallback procedure.
+
+### Permission and privacy
+
+No access to confidential college records is required for this proposal.
+Any future observation or interview must be voluntary and permission-based.
+If permission is unavailable, the investigation will remain hypothetical.
+Only synthetic test records and permitted evidence will be shared.
+
+### Illustrative time-saving calculation
+
+The following values are planning assumptions, not measured college data.
+
+| Activity | Illustrative time per request |
+|---|---:|
+| Existing process, including status checking and follow-up | 12 minutes |
+| Proposed submission | 3 minutes |
+| Proposed status check | 1 minute |
+| Additional review and support | 2 minutes |
+| Proposed total | 6 minutes |
+
+Illustrative net time saved per request:
+
+12 - (3 + 1 + 2) = 6 minutes.
+
+| Requests per month | Illustrative monthly time saved |
+|---:|---:|
+| 10 | 60 minutes |
+| 40 | 240 minutes |
+| 100 | 600 minutes |
+
+These figures do not establish actual demand or savings at ICFAI.
+
+### Implementation effort and break-even
+
+Implementation effort has not been measured. For planning purposes only,
+suppose implementation requires 6 hours, equivalent to 360 minutes.
+
+At the illustrative saving of 6 minutes per request, the one-time
+implementation effort would be recovered after:
+
+360 / 6 = 60 requests.
+
+This is a hypothetical break-even calculation, not a measured return
+on investment. Actual feasibility depends on implementation effort,
+maintenance, training, request volume, and measured time savings.
+
+### Conditions that would change the proposal
+
+The design should be reconsidered or abandoned if a permission-based
+investigation finds that the existing process already provides reliable
+submission tracking, timely reviews, acceptable workload, and effective
+exception handling.
+
+It should also be revised if implementation and support costs outweigh
+the measured benefits, or if the proposed system cannot enforce
+appropriate access controls and preserve an auditable approval process.
