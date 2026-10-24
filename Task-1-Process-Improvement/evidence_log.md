@@ -7,7 +7,7 @@ This evidence log documents observations, potential workflow problems, design de
 
 ---
 
-### Entry 1: Initial Process Observation
+### Entry 1: Initial Hypothesis and Process Model
 
 - **Date recorded:** 22 October 2026
 - **Process investigated:** Academic project submission and review
