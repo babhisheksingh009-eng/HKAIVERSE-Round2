@@ -69,7 +69,7 @@ Environment files, credentials, local databases, virtual environments, and other
 
 - **GitHub repository:** https://github.com/babhisheksingh009-eng/HKAIVERSE-Round2
 - **Release:** https://github.com/babhisheksingh009-eng/HKAIVERSE-Round2/releases/tag/v1.0.0
-- **Project commit:** https://github.com/babhisheksingh009-eng/HKAIVERSE-Round2/commit/ea583561d7bc25b5efb491c8c8402f06167fb94a
+- **Project commit:** https://github.com/babhisheksingh009-eng/HKAIVERSE-Round2/commit/ff582b8cd7a01caa371d61fd9eb21c0e5196e185
 
 ## Personal Contribution
 
