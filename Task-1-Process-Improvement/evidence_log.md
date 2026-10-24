@@ -201,6 +201,8 @@ Test the prototype using five scenarios: normal submission, missing information,
 
 Estimate the potential time required to process one academic project submission using the existing workflow and the proposed SkillBridge AI workflow.
 
+**Illustrative rework assumption:** For planning only, assume 20% of requests require 10 additional minutes of rework. Expected rework effort per request = 0.20 × 10 = 2 minutes. The illustrative 12-minute baseline therefore assumes 10 minutes of initial handling and follow-up plus 2 expected rework minutes. This is an assumption, not a measured college result.
+
 **Illustrative estimates:**
 
 | Activity | Estimated time |

@@ -234,6 +234,8 @@ Only synthetic test records and permitted evidence will be shared.
 
 The following values are planning assumptions, not measured college data.
 
+**Illustrative rework calculation:** Assume that 20% of requests require 10 additional minutes of rework. Expected rework effort per request is 0.20 × 10 = 2 minutes. For this example, the existing-process estimate of 12 minutes consists of 10 minutes of initial handling and follow-up plus 2 expected rework minutes. These assumptions are unmeasured and must be validated; they are not ICFAI operational data.
+
 | Activity | Illustrative time per request |
 |---|---:|
 | Existing process, including status checking and follow-up | 12 minutes |
