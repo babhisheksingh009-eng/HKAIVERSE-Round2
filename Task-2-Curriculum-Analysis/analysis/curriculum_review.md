@@ -299,3 +299,10 @@ For a provisional practical-update analysis, five selected course entries have t
 Calculation: 18 / 71 × 100 = 25.35%.
 
 **Interpretation and limitation:** The 25.35% figure represents the selected entries' share of the 71 numeric credits in this analysis dataset only. It is not a verified percentage of the complete B.Tech degree. The CSV is a proposed analysis dataset, not an official degree-credit statement. The exact applicability of the public IFHE course structure to the 2023 admission batch, and the complete official programme-credit denominator, still require confirmation.
+
+
+## Mentor-Confirmed Curriculum Baseline
+
+The student has confirmed that the photographed B.Tech in Computer Science & Engineering curriculum is the correct curriculum for the student's batch. The document lists semester-wise courses and credits across Semesters I–VIII. The overall credit figure appears to be 163 in the photograph; this figure must be transcribed from a clear copy before it is used as the denominator for percentage calculations.
+
+Next verification: transcribe all official course codes, titles, semesters, and credits into `data/official_curriculum_reference.csv`, then reconcile the existing analysis dataset against that complete reference. The 71-credit subtotal remains the subtotal of the existing analysis dataset, not the official degree total.

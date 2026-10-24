@@ -176,3 +176,10 @@ The five entries selected for practical updates are Java Programming (4), Python
 Calculation: 18 / 71 × 100 = 25.35%.
 
 This is a **dataset-based coverage calculation**, not a verified percentage of the entire B.Tech degree and not a claim that 18 official degree credits are being added, removed, or changed. Practical improvements can occur within an existing course without changing its credit value. The complete official degree-credit total and the applicability of the published IFHE structure to the 2023 admission batch remain unconfirmed; therefore, this proposal does not claim that the official programme has been credit-balanced.
+
+
+## Official Curriculum Baseline Update
+
+The student has confirmed that the photographed B.Tech in Computer Science & Engineering curriculum is applicable to the student's batch. The document appears to show 163 total credits, but the figure and all semester-wise credit totals must be transcribed and checked before final credit-impact percentages are reported.
+
+The proposed curriculum remains a recommendation, not an official change to the programme. Existing course credits must be mapped to the confirmed curriculum before calculating the proportion affected.
